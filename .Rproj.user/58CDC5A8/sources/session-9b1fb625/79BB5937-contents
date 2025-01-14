@@ -1,0 +1,56 @@
+# Getting Started
+
+```{r}
+#| echo: false
+
+source("_common.R")
+```
+
+This page will guide you through the steps required to install, set up, and launch the **cd2030 Shiny App**. Follow these instructions to ensure a smooth start.
+
+## Prerequisites
+
+Before using the app, ensure you have the following:
+
+1.  **R (version 3.6 or higher)**: Download it from [CRAN](https://cran.r-project.org/).
+2.  **RStudio**: Download it from [RStudio](https://www.rstudio.com/products/rstudio/download/).
+3.  **Data Access**: Ensure you have access to datasets such as **UN estimates**,**WUENIC estimates**, and **survey data**.
+
+------------------------------------------------------------------------
+
+## Installing the App
+
+The **cd2030** Shiny App is hosted on GitHub. To install it:
+
+1.  Open RStudio.
+2.  Run the following commands to install the app:
+
+```{r, eval=FALSE}
+if (!require('pak')) install.packages("pak")
+pak::pak("damurka/cd2030")
+```
+
+This will download and install the app on your system, along with all required packages.
+
+------------------------------------------------------------------------
+
+## Launching the App
+
+Once installed, launch the app using the following commands:
+
+```{r, eval=FALSE}
+library(cd2030)
+dashboard()
+```
+
+The app will open in your default web browser, ready for use.
+
+![](images/launch.jpg){fig-align="left" width="120%"}
+
+**Figure 1**: Launching the cd2030 Shiny App.
+
+------------------------------------------------------------------------
+
+## Next Steps
+
+With the app installed and running, proceed to the **App Features** section to explore its functionality and workflows in detail.

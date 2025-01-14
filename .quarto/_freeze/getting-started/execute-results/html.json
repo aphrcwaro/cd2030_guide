@@ -1,0 +1,17 @@
+{
+  "hash": "61cf05f1554ffbb8983d2ee37b153eed",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Getting Started\n\n\n\n::: {.cell}\n\n:::\n\n\n\nThis page will guide you through the steps required to install, set up, and launch the **cd2030 Shiny App**. Follow these instructions to ensure a smooth start.\n\n## Prerequisites\n\nBefore using the app, ensure you have the following:\n\n1.  **R (version 3.6 or higher)**: Download it from [CRAN](https://cran.r-project.org/).\n2.  **RStudio**: Download it from [RStudio](https://www.rstudio.com/products/rstudio/download/).\n3.  **Data Access**: Ensure you have access to datasets such as **UN estimates**,**WUENIC estimates**, and **survey data**.\n\n------------------------------------------------------------------------\n\n## Installing the App\n\nThe **cd2030** Shiny App is hosted on GitHub. To install it:\n\n1.  Open RStudio.\n2.  Run the following commands to install the app:\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nif (!require('pak')) install.packages(\"pak\")\npak::pak(\"damurka/cd2030\")\n```\n:::\n\n\n\nThis will download and install the app on your system, along with all required packages.\n\n------------------------------------------------------------------------\n\n## Launching the App\n\nOnce installed, launch the app using the following commands:\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(cd2030)\ndashboard()\n```\n:::\n\n\n\nThe app will open in your default web browser, ready for use.\n\n![](images/launch.jpg){fig-align=\"left\" width=\"120%\"}\n\n**Figure 1**: Launching the cd2030 Shiny App.\n\n------------------------------------------------------------------------\n\n## Next Steps\n\nWith the app installed and running, proceed to the **App Features** section to explore its functionality and workflows in detail.\n",
+    "supporting": [
+      "getting-started_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

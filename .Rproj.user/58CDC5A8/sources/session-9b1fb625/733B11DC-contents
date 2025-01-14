@@ -1,0 +1,35 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "cd2030 User Guide"
+  reader-mode: true
+  
+  page-footer: 
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  cover-image: cover.png
+  favicon: cover.png
+  site-url: https://github.com/damurka/cd2030/
+  repo-url: https://github.com/damurka/cd2030/
+  repo-branch: main
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    
+    - getting-started.qmd
+    - app-features.qmd
+    - data-upload.qmd
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - cd2030.scss
+    code-link: true
+    
+    author-meta: "David Kariuki"
+
+editor: visual
+

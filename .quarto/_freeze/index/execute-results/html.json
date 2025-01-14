@@ -1,0 +1,15 @@
+{
+  "hash": "707632b1ea99bcc9907c55f47eece3db",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Introduction\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\nWelcome to the **cd2030 User Guide**! This guide is designed to help you navigate the features and functionality of the cd2030 Shiny app. Whether you are a beginner or an advanced user, this guide provides step-by-step instructions to load data, analyze results, and generate reports effectively.\n\n## About the App\n\nThe **cd2030 Shiny App** is a comprehensive tool for analyzing, visualizing, and reporting health-related data. Designed for researchers, policymakers, and program managers, the app integrates datasets such as **UN estimates**, **WUENIC estimates**, **survey data**, and **health facility data** to generate insights and customizable reports.\n\n## Key Features\n\n-   **Data Integration**: Easily upload and manage datasets from multiple sources.\n-   **Dynamic Visualizations**: Generate charts, tables, and summaries to explore trends and patterns.\n-   **Custom Annotations**: Add notes to enhance documentation and support collaboration.\n-   **Report Generation**: Create tailored reports in various formats to suit your needs.\n\n## Prerequisites\n\nTo use the app, you’ll need:\n\n-   A working installation of **R (version 3.6 or higher)** and **RStudio**.\n-   Required R packages (listed in the installation section).\n-   Access to datasets such as:\n    -   **UN estimates**\n    -   **WUENIC estimates**\n    -   Country-specific **survey data**\n    -   **Health facility datasets** for analysis.\n\n## How to Use This Guide\n\nThis guide is structured to take you from setup to advanced usage. You can navigate through the sidebar to access sections such as:\n\n-   **Getting Started**: Instructions for installing and launching the app.\n-   **App Features**: Learn how to load data, generate visualizations, and create reports.\n-   **FAQs**: Troubleshoot common issues and access additional support.\n\nFor detailed help on specific pages within the app, use the **Help** button provided in the interface.\n\n## Acknowledgments\n\nThis app and guide were developed by the **African Population and Health Research Center (APHRC)**.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

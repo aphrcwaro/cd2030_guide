@@ -1,0 +1,17 @@
+{
+  "hash": "35214e7bcd017e88a4bf88c30887a558",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# App Features\n\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(cd2030)\ndashboard()\n```\n:::\n\n\n\n\n\n\n\n\nThis section provides a detailed explanation of the main components of the **cd2030 Shiny App** interface, including the **Sidebar**, **Title Bar**, and **Body Content**. Follow this guide to understand how to navigate and use the app effectively.\n\n------------------------------------------------------------------------\n\n## Title Bar\n\nThe Title Bar provides essential controls and displays the current context of the app. The contents of the Title Bar, such as \"Set Cache Directory/SaveCache\" and \"Download Report,\" are only displayed after data has been loaded into the app.\n\n### Features of the Title Bar\n\n1.  **Country Selection**:\n    -   Displays the name of the selected country (e.g., \"Senegal - Countdown Analysis\").\n    -   ![](images/page-title.jpg)\n2.  **Set Cache Directory/Save Cache**:\n    -   Button to specify a directory for saving intermediate results and progress.\n    -   ![](images/page-cache.jpg)\n3.  **Download Report**:\n    -   Button to download the final report or page-specific results.\n    -   ![](images/page-download.jpg)\n\n------------------------------------------------------------------------\n\n## Sidebar\n\nThe Sidebar provides navigation for the app, with steps arranged sequentially to guide the user through the workflow. Each section represents a critical component of the analysis.\n\n### Features of the Sidebar\n\n1.  **Introduction**:\n    -   Provides a brief overview of the app's purpose and functionality.\n    -   ![](images/sidebar-intro.jpg)\n2.  **Load Data**:\n    -   Allows users to upload datasets (e.g., UN estimates, WUENIC estimates).\n    -   ![](images/sidebar-load.jpg)\n3.  **Quality Checks**:\n    -   Steps for checking data consistency, completeness, and outliers.\n    -   Subsections include:\n        -   Reporting Rate\n        -   Outlier Detection\n        -   Consistency Check\n        -   Data Completeness\n        -   Calculate Ratios\n        -   Overall Score\n    -   ![](images/sidebar-quality.jpg)\n4.  **Analysis Setup**:\n    -   Options for loading data used in data analysis include **UN Estimates**, **WUENIC estimates**, and **survey data**.\n    -   ![](images/sidebar-setup.jpg)\n5.  **National and Subnational Analysis**:\n    -   Tools for analysis of equity and coverage at national and subnational levels. This section will only work after completing the **Analysis Setup** section.\n    -   ![](images/sidebar-equity.jpg)\n\n------------------------------------------------------------------------\n\n## Body Content\n\nThe central workspace where the main analysis and visualization tasks are performed.\n\n### Features of the Body Content\n\n1.  **Page Title**:\n    -   Displays the current module or analysis step (e.g., \"Reporting Rate\").\n    -   ![](images/body-title.jpg)\n2.  **Action Buttons**:\n    -   **Generate Report**: Downloads a report for the current page.\n    -   **Add Notes**: Allows users to annotate specific elements or results.\n    -   **Get Help**: Provides context-sensitive guidance for the current page.\n    -   ![](images/body-buttons.jpg)\n",
+    "supporting": [
+      "app-features_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
