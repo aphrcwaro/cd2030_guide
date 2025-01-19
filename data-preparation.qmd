@@ -1,0 +1,3 @@
+# Data Preparation {#sec-data-preparation}
+
+This guide details how to prepare data into the Countdown Health Facility Data (HFD) Format.

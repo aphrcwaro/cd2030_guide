@@ -1,6 +1,6 @@
 # Upload Data {#sec-upload-data}
 
-This guide details how to prepare and upload data into the cd2030 app, ensuring compatibility with the Countdown Health Facility Data (HFD) Format.
+This guide details how to upload data into the cd2030 app, ensuring compatibility with the Countdown Health Facility Data (HFD) Format.
 
 ## 1. Understanding the Upload Process
 
@@ -18,39 +18,7 @@ The app supports the following file types:
 -   **Stata Files (`.dta`):** Recommended for processed and formatted data adhering to the HFD standard.
 -   **R Data Files (`.rds`):** For pre-processed data, settings, or cached data.
 
-## 3. Preparing Your Data for Upload
-
-Proper data preparation is crucial for a successful upload. Follow these steps:
-
-### 3.1 Adhere to the HFD Format
-
-Your data **must** conform to the **Countdown HFD Format**. This ensures consistency and allows the app to correctly interpret your data.
-
--   **HFD Guidelines:** - Consult this document for detailed specifications.
--   **HFD Standardized Template:** - Use this template to structure your data correctly.
-
-### 3.2 Key Data Elements
-
-Ensure your data includes the following essential elements:
-
--   **Geographic Identifiers:** Consistent and unique identifiers for geographic areas (e.g., `district`, `region`).
--   **Time Variables:** `year` and `month` variables to represent the time period of the data.
--   **Indicators:** The health indicators you wish to analyze (e.g., `opv1`, `dpt3`, etc.).
-
-### 3.3 Data Cleaning and Validation (Before Upload)
-
-It is **essential** to clean and validate your data *before* uploading it to the app. This includes:
-
--   **Checking for Missing Values:** Address any missing data appropriately.
--   **Ensuring Data Consistency:** Verify data consistency across different variables and time periods.
--   **Checking Data Types:** Ensure data types are correct (e.g., numeric for indicators, character for identifiers).
--   **Removing Duplicates:** Eliminate any duplicate records.
-
-### 3.4 Saving Your File
-
-Save your prepared data in one of the supported formats (`.xls` or `.xlsx`).
-
-## 4. Uploading Your File
+## 3. Uploading Your File
 
 Once your data is prepared:
 
@@ -65,12 +33,12 @@ The app will automatically validate the uploaded file.
 
 ------------------------------------------------------------------------
 
-## 5. Troubleshooting Uploads
+## 4. Troubleshooting Uploads
 
 The following table lists common upload errors and their solutions:
 
 | Error Message | Cause | Solution |
-|:---|:---|:---|
+|:-----------------------|:-----------------------|:-----------------------|
 | "Unsupported file format" | File type not supported. | Save your file as `.xls`, `.xlsx`, `.dta`, or `.rds`. `.dta` is the recommended format. |
 | "The following required columns are missing from the data: \[column names\]" | Missing essential columns in the data. | Add the missing column(s) to your dataset and ensure their values are valid. Refer to the HFD Guidelines for required columns. |
 | "The following sheets are missing: \[sheet names\]" (Primarily for Excel files) | Missing one or more required sheets in the Excel file. | Ensure all required sheets are present and conform to the template. If working with `.dta` or `.rds` files, this error should not occur. |
@@ -81,7 +49,7 @@ The following table lists common upload errors and their solutions:
 
 ------------------------------------------------------------------------
 
-## 6. Data Validation within the App
+## 5. Data Validation within the App
 
 The app performs the following validation checks during the upload process:
 
@@ -91,7 +59,7 @@ The app performs the following validation checks during the upload process:
 4.  **Data Availability Check:** Checks that required sheets/data are not empty and key columns are populated.
 5.  **Data Type Validation:** Checks that numeric columns contain valid numeric values. Non-numeric values will be coerced to NA.
 
-## 7. How Errors Are Handled
+## 6. How Errors Are Handled
 
 -   If validation fails, the upload process stops, and an informative error message is displayed.
 -   Consult the "Troubleshooting Uploads" section for solutions to common errors.

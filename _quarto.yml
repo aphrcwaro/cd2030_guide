@@ -23,6 +23,7 @@ book:
     
     - part: data-input.qmd
       chapters: 
+        - data-preparation.qmd
         - upload-data.qmd
         - dhis2-download.qmd
 
