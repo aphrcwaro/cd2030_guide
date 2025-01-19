@@ -11,6 +11,7 @@ book:
       This book was built with <a href="https://quarto.org/">Quarto</a>.
   cover-image: cover.png
   favicon: cover.png
+  site-url: https://damurka.github.io/cd2030_guide/
   repo-url: https://github.com/damurka/cd2030/
   repo-branch: main
   repo-actions: [edit, issue]
