@@ -2,31 +2,3 @@
 .Rproj.user/
 .Rhistory
 .RData
-
-# Quarto-specific files
-/.quarto/
-.quarto_cache/
-
-# Build artifacts and outputs
-_book/
-_site/
-_site_libs/
-_main.*
-search_index.json
-
-# Markdown and HTML outputs (except specific files)
-*.md
-!CODE_OF_CONDUCT.md
-*.html
-
-# Cache and dependency folders
-*_cache/
-*_files/
-libs/
-node_modules/
-
-# Logs and temporary files
-*.log
-*.tmp
-*.bak
-.DS_Store
