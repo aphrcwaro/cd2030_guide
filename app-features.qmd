@@ -10,7 +10,7 @@ This section details the main components of the **cd2030 Shiny App** interface: 
 
 ## Title Bar
 
-The Title Bar, located at the top of the app, provides key information controls. The elements of the Title Bar, such as "Set Cache Directory/SaveCache" and "Download Report," are only displayed after data has been loaded.
+The Title Bar, located at the top of the app, provides key information controls. The elements of the Title Bar, such as "Set Cache Directory/Save Cache" and "Download Report," are only displayed after data has been loaded.
 
 ### Key Elements of the Title Bar
 
@@ -29,9 +29,8 @@ knitr::include_graphics("images/page-title.jpg", dpi = 270)
 ```
 
 2.  **Cache Management**
-
--   **Set Cache Directory:** This button allows you to specify a directory for saving intermediate results and progress.
--   **Save Cache:** This button allows you to save the progress of your analysis. This is useful for large analyses or if you need to resume a session later.
+    -   **Set Cache Directory:** This button allows you to specify a directory for saving intermediate results and progress.
+    -   **Save Cache:** This button allows you to save the progress of your analysis. This is useful for large analyses or for resuming a session later.
 
 ```{r}
 #| label: fig-ds-page-cache
@@ -45,7 +44,7 @@ knitr::include_graphics("images/page-title.jpg", dpi = 270)
 knitr::include_graphics("images/page-cache.jpg", dpi = 270)
 ```
 
-3.  **Download Report**: This button allows you to generate the final report. The available download formats are word document and pdf document.
+3.  **Download Report**: This button allows you to generate the final report. The available download formats are Word and PDF.
 
 ```{r}
 #| label: fig-ds-page-download
@@ -94,12 +93,13 @@ knitr::include_graphics("images/sidebar-load.jpg", dpi = 270)
 ```
 
 3.  **Quality Checks**: Provides tools for assessing data quality, include checks for consistency, completeness, and outliers. Subsections include:
-  -   Reporting Rate
-  -   Outlier Detection
-  -   Consistency Check
-  -   Data Completeness
-  -   Calculate Ratios
-  -   Overall Score
+    -   Reporting Rate
+    -   Outlier Detection
+    -   Consistency Check
+    -   Data Completeness
+    -   Calculate Ratios
+    -   Overall Score
+
 ```{r}
 #| label: fig-ds-sidebar-quality
 #| echo: false
@@ -113,6 +113,7 @@ knitr::include_graphics("images/sidebar-quality.jpg", dpi = 270)
 ```
 
 4.  **Analysis Setup**: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the subnational survey and mapping data to the uploaded data.
+
 ```{r}
 #| label: fig-ds-sidebar-setup
 #| echo: false
@@ -160,10 +161,10 @@ knitr::include_graphics("images/body-title.jpg", dpi = 270)
 ```
 
 2.  **Action Buttons**: Provides context-specific actions:
-  -   **Generate Report**: Downloads a report specific to the current page or analysis.
-  -   **Add Notes**: Allows you to add annotations and comments directly to the results or visualizations.
-  -   **Get Help**: Provides context-sensitive help and documentation for the current page.
-  
+    -   **Generate Report**: Downloads a report specific to the current page or analysis.
+    -   **Add Notes**: Allows you to add annotations and comments directly to the results or visualizations.
+    -   **Get Help**: Provides context-sensitive help and documentation for the current page.
+
 ```{r}
 #| label: fig-ds-body-buttons
 #| echo: false
