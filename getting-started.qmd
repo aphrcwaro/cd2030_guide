@@ -12,44 +12,63 @@ This page will guide you through the steps required to install, set up, and laun
 
 Before using the app, ensure you have the following:
 
-1.  **R (version 3.6 or higher)**: Download it from [CRAN](https://cran.r-project.org/).
-2.  **RStudio**: Download it from [RStudio](https://www.rstudio.com/products/rstudio/download/).
-3.  **Data Access**: Ensure you have access to datasets such as **UN estimates**,**WUENIC estimates**, and **survey data**.
-
-------------------------------------------------------------------------
+1.  **Software**:
+    -   **R (version 4.0 or higher recommended)**: Download it from [CRAN](https://cran.r-project.org/).
+    -   **RStudio (latest version recommended)**: Download it from [RStudio](https://www.rstudio.com/products/rstudio/download/).
+2.  **Data Access**: Ensure you have access to the necessary datasets:
+    -   UN estimates
+    -   WUENIC estimates
+    -   survey data
 
 ## Installing the App
 
 The **cd2030** Shiny App is hosted on GitHub. To install it:
 
 1.  Open RStudio.
-2.  Run the following commands to install the app:
+2.  Install the `pak` package (if not already installed):
 
-```{r, eval=FALSE}
+```{r}
+#| eval: false
+
 if (!require('pak')) install.packages("pak")
+```
+
+This package manager simplifies the app installation process.
+
+3.  Install the cd2030 app:
+
+```{r}
+#| eval: false
+
 pak::pak("damurka/cd2030")
 ```
 
 This will download and install the app on your system, along with all required packages.
 
-------------------------------------------------------------------------
-
 ## Launching the App
 
 Once installed, launch the app using the following commands:
 
-```{r, eval=FALSE}
+```{r}
+#| eval: false
+
 library(cd2030)
 dashboard()
 ```
 
 The app will open in your default web browser, ready for use.
 
-![](images/launch.jpg){fig-align="left" width="120%"}
+```{r}
+#| label: fig-ds-launch
+#| echo: false
+#| fig-cap: |
+#|   Launching the cd2030 Shiny App.
+#| fig-alt: |
+#|   Launching the cd2030 Shiny App.
+#| out.width: NULL
 
-**Figure 1**: Launching the cd2030 Shiny App.
-
-------------------------------------------------------------------------
+knitr::include_graphics("images/launch.jpg", dpi = 270)
+```
 
 ## Next Steps
 

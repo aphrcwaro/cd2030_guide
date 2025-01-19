@@ -6,70 +6,172 @@
 source("_common.R")
 ```
 
-This section provides a detailed explanation of the main components of the **cd2030 Shiny App** interface, including the **Sidebar**, **Title Bar**, and **Body Content**. Follow this guide to understand how to navigate and use the app effectively.
-
-------------------------------------------------------------------------
+This section details the main components of the **cd2030 Shiny App** interface: the **Title Bar**, **Sidebar**, and **Main Panel (Body Content)**. Understanding these elements will help you navigate and use the app effectively.
 
 ## Title Bar
 
-The Title Bar provides essential controls and displays the current context of the app. The contents of the Title Bar, such as "Set Cache Directory/SaveCache" and "Download Report," are only displayed after data has been loaded into the app.
+The Title Bar, located at the top of the app, provides key information controls. The elements of the Title Bar, such as "Set Cache Directory/SaveCache" and "Download Report," are only displayed after data has been loaded.
 
-### Features of the Title Bar
+### Key Elements of the Title Bar
 
-1.  **Country Selection**:
-    -   Displays the name of the selected country (e.g., "Senegal - Countdown Analysis").
-    -   ![](images/page-title.jpg)
-2.  **Set Cache Directory/Save Cache**:
-    -   Button to specify a directory for saving intermediate results and progress.
-    -   ![](images/page-cache.jpg)
-3.  **Download Report**:
-    -   Button to download the final report or page-specific results.
-    -   ![](images/page-download.jpg)
+1.  **Contextual Information**: Displays the current analyssis context, such as the country of analysis (e.g., "Senegal - Countdown Analysis").
 
-------------------------------------------------------------------------
+```{r}
+#| label: fig-ds-page-title
+#| echo: false
+#| fig-cap: |
+#|   The page title.
+#| fig-alt: |
+#|   The page title.
+#| out.width: NULL
+
+knitr::include_graphics("images/page-title.jpg", dpi = 270)
+```
+
+2.  **Cache Management**
+
+-   **Set Cache Directory:** This button allows you to specify a directory for saving intermediate results and progress.
+-   **Save Cache:** This button allows you to save the progress of your analysis. This is useful for large analyses or if you need to resume a session later.
+
+```{r}
+#| label: fig-ds-page-cache
+#| echo: false
+#| fig-cap: |
+#|   The cache management button.
+#| fig-alt: |
+#|   The cache management button.
+#| out.width: NULL
+
+knitr::include_graphics("images/page-cache.jpg", dpi = 270)
+```
+
+3.  **Download Report**: This button allows you to generate the final report. The available download formats are word document and pdf document.
+
+```{r}
+#| label: fig-ds-page-download
+#| echo: false
+#| fig-cap: |
+#|   The cache management button.
+#| fig-alt: |
+#|   The cache management button.
+#| out.width: NULL
+
+knitr::include_graphics("images/page-download.jpg", dpi = 270)
+```
 
 ## Sidebar
 
-The Sidebar provides navigation for the app, with steps arranged sequentially to guide the user through the workflow. Each section represents a critical component of the analysis.
+The Sidebar, located on the left side of the app, provides navigation through the analysis workflow. The sections are arranged sequentially to guide you through the process.
 
-### Features of the Sidebar
+### Sidebar Navigation
 
-1.  **Introduction**:
-    -   Provides a brief overview of the app's purpose and functionality.
-    -   ![](images/sidebar-intro.jpg)
-2.  **Load Data**:
-    -   Allows users to upload datasets (e.g., UN estimates, WUENIC estimates).
-    -   ![](images/sidebar-load.jpg)
-3.  **Quality Checks**:
-    -   Steps for checking data consistency, completeness, and outliers.
-    -   Subsections include:
-        -   Reporting Rate
-        -   Outlier Detection
-        -   Consistency Check
-        -   Data Completeness
-        -   Calculate Ratios
-        -   Overall Score
-    -   ![](images/sidebar-quality.jpg)
-4.  **Analysis Setup**:
-    -   Options for loading data used in data analysis include **UN Estimates**, **WUENIC estimates**, and **survey data**.
-    -   ![](images/sidebar-setup.jpg)
-5.  **National and Subnational Analysis**:
-    -   Tools for analysis of equity and coverage at national and subnational levels. This section will only work after completing the **Analysis Setup** section.
-    -   ![](images/sidebar-analysis.jpg)
+1.  **Introduction**: Provides a brief overview of the app's purpose and functionality.
 
-------------------------------------------------------------------------
+```{r}
+#| label: fig-ds-sidebar-intro
+#| echo: false
+#| fig-cap: |
+#|   The Introduction page.
+#| fig-alt: |
+#|   The Introduction page.
+#| out.width: NULL
 
-## Body Content
+knitr::include_graphics("images/sidebar-intro.jpg", dpi = 270)
+```
 
-The central workspace where the main analysis and visualization tasks are performed.
+2.  **Load Data**: Allows you to upload and manage your datasets (e.g. Health Facility Datasets, Master datasets, and cache file). It also allows you to download data diretly from the DHIS2 instance.
 
-### Features of the Body Content
+```{r}
+#| label: fig-ds-sidebar-load
+#| echo: false
+#| fig-cap: |
+#|   The data loading page.
+#| fig-alt: |
+#|   The data loading page.
+#| out.width: NULL
 
-1.  **Page Title**:
-    -   Displays the current module or analysis step (e.g., "Reporting Rate").
-    -   ![](images/body-title.jpg)
-2.  **Action Buttons**:
-    -   **Generate Report**: Downloads a report for the current page.
-    -   **Add Notes**: Allows users to annotate specific elements or results.
-    -   **Get Help**: Provides context-sensitive guidance for the current page.
-    -   ![](images/body-buttons.jpg)
+knitr::include_graphics("images/sidebar-load.jpg", dpi = 270)
+```
+
+3.  **Quality Checks**: Provides tools for assessing data quality, include checks for consistency, completeness, and outliers. Subsections include:
+  -   Reporting Rate
+  -   Outlier Detection
+  -   Consistency Check
+  -   Data Completeness
+  -   Calculate Ratios
+  -   Overall Score
+```{r}
+#| label: fig-ds-sidebar-quality
+#| echo: false
+#| fig-cap: |
+#|   The data quality checks section.
+#| fig-alt: |
+#|   The reporting rate preview.
+#| out.width: NULL
+
+knitr::include_graphics("images/sidebar-quality.jpg", dpi = 270)
+```
+
+4.  **Analysis Setup**: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the subnational survey and mapping data to the uploaded data.
+```{r}
+#| label: fig-ds-sidebar-setup
+#| echo: false
+#| fig-cap: |
+#|   The analysis setup page.
+#| fig-alt: |
+#|   The analysis setup page.
+#| out.width: NULL
+
+knitr::include_graphics("images/sidebar-setup.jpg", dpi = 270)
+```
+
+5.  **National and Subnational Analysis**: Provides tools for analysing coverage and equity at both the national and subnational levels. This pages are only active after completing the "Analysis Setup" section.
+
+```{r}
+#| label: fig-ds-sidebar-analysis
+#| echo: false
+#| fig-cap: |
+#|   The analysis pages.
+#| fig-alt: |
+#|   The analysis pages.
+#| out.width: NULL
+
+knitr::include_graphics("images/sidebar-analysis.jpg", dpi = 270)
+```
+
+## Main Panel(Body Content)
+
+The main panel is the central workspace where the analysis result, visualizations, and interactive elements are displayed.
+
+### Key Elements of the Main Panel
+
+1.  **Page Title**: Displays the current module or analysis step (e.g., "Reporting Rate").
+
+```{r}
+#| label: fig-ds-body-title
+#| echo: false
+#| fig-cap: |
+#|   The page title.
+#| fig-alt: |
+#|   The page title.
+#| out.width: NULL
+
+knitr::include_graphics("images/body-title.jpg", dpi = 270)
+```
+
+2.  **Action Buttons**: Provides context-specific actions:
+  -   **Generate Report**: Downloads a report specific to the current page or analysis.
+  -   **Add Notes**: Allows you to add annotations and comments directly to the results or visualizations.
+  -   **Get Help**: Provides context-sensitive help and documentation for the current page.
+  
+```{r}
+#| label: fig-ds-body-buttons
+#| echo: false
+#| fig-cap: |
+#|   The page actions.
+#| fig-alt: |
+#|   The page actions
+#| out.width: NULL
+
+knitr::include_graphics("images/body-buttons.jpg", dpi = 270)
+```

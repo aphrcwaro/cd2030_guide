@@ -1,0 +1,30 @@
+# Data Input {#sec-data-input .unnumbered}
+
+This page provides an introduction to two key functionalities of the app: **Data Upload** and **DHIS2 Data Download**. These tools enable efficient integration and preparation of the countdown data for analysis.
+
+## Uploading Data
+
+Easily upload dataset formatted according to the **Countdown Health Facility Data Format**. This modules includes
+
+-   **File Validation:** Ensures your dataset complies with required standards.
+-   **Supported formats:** Accepts `.xls`, `.xlsx`, `.dta` and `.rds` files
+-   **Error Handling:** Provides detailed feedback for resolving upload issues.
+
+## DHIS2 Data Download
+
+Securely connect to DHIS2 servers to fetch health data for analysis. Key features include:
+
+-   **Customizable Period:** Select a specific date range for the data.
+-   **Country Selection:** Fetch data tailored to the selected country's settings.
+-   **Secure Authentication:** Your credentials are used securely and discarded after the session.
+
+## Why Use These Tool?
+
+1.  Quickly integrate data into the app with minimal friction.
+2.  Built-in validation ensues datasets meet analytical requirements.
+3.  Download data from DHIS2 with confidence in secure session-based authentication.
+
+By following these guides, you can set up your data efficiently and ensure it is ready for detailed analysis in the app. Choose the appropriate section to get started:
+
+-   @sec-upload-data
+-   @sec-dhis2-download

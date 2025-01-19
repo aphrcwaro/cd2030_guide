@@ -20,7 +20,11 @@ book:
     
     - getting-started.qmd
     - app-features.qmd
-    - data-upload.qmd
+    
+    - part: data-input.qmd
+      chapters: 
+        - upload-data.qmd
+        - dhis2-download.qmd
 
 format:
   html:
@@ -30,6 +34,7 @@ format:
     code-link: true
     
     author-meta: "David Kariuki"
+    callout-appearance: simple
 
 editor: visual
 

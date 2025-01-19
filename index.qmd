@@ -6,26 +6,30 @@
 source("_common.R")
 ```
 
-Welcome to the **cd2030 User Guide**! This guide is designed to help you navigate the features and functionality of the cd2030 Shiny app. Whether you are a beginner or an advanced user, this guide provides step-by-step instructions to load data, analyze results, and generate reports effectively.
+Welcome to the **cd2030 User Guide**! This guide is designed to help you navigate the features and functionality of the cd2030 Shiny app. It provides step-by-step instructions for data loading, analysis, visualization, and report generation.
 
 ## About the App
 
-The **cd2030 Shiny App** is a comprehensive tool for analyzing, visualizing, and reporting health-related data. Designed for researchers, policymakers, and program managers, the app integrates datasets such as **UN estimates**, **WUENIC estimates**, **survey data**, and **health facility data** to generate insights and customizable reports.
+The cd2030 Shiny App is a tool for analysing, visualizing, and reporting cd2030 vaccines data. Designed for researchers, policy makers, and program managers, it integrates various datasets including **UN estimates**, **WUENIC estimates**, **survey data**, and **health facility data**, to generate actionable insights and customizable reports.
 
 ## Key Features
 
--   **Data Integration**: Easily upload and manage datasets from multiple sources.
+The app offers a range features to streamline your data analysis workflow:
+
+-   **Data Integration**: Easily upload and manage data from multiple sources. Supported formats and specific instructions will be detailed in the "Data Input" section.
 -   **Dynamic Visualizations**: Generate charts, tables, and summaries to explore trends and patterns.
--   **Custom Annotations**: Add notes to enhance documentation and support collaboration.
--   **Report Generation**: Create tailored reports in various formats to suit your needs.
+-   **Custom Annotations**: Add notes and explanations directly within the app to enhance documentation and provide context for your analysis.
+-   **Report Generation**: Create reports in various formats to suit your needs.
 
 ## Prerequisites
 
-To use the app, you’ll need:
+Before using the app, ensure you have the following:
 
--   A working installation of **R (version 3.6 or higher)** and **RStudio**.
--   Required R packages (listed in the installation section).
--   Access to datasets such as:
+-   **Software**
+    -   **R (version 4.0 or higher)**
+    -   **RStudio**
+-   **R Packages**: The required R packages will be automatically installed upon first launch if not already present. A full list of dependencies can be found in the "Installation" section.
+-   **Data**: Access to necessary datasets
     -   **UN estimates**
     -   **WUENIC estimates**
     -   Country-specific **survey data**
@@ -33,14 +37,14 @@ To use the app, you’ll need:
 
 ## How to Use This Guide
 
-This guide is structured to take you from setup to advanced usage. You can navigate through the sidebar to access sections such as:
+This guide is structured to guide you through the app's functionalities, from set-up to advanced usage. Use the sidebar to navigate to specific sections:
 
--   **Getting Started**: Instructions for installing and launching the app.
--   **App Features**: Learn how to load data, generate visualizations, and create reports.
--   **FAQs**: Troubleshoot common issues and access additional support.
+-   **Installation:** Detailed instructions for installing the app and its dependencies.
+-   **Data Input:** Step-by-step guidance on loading and managing your data.
+-   **Data Analysis and Visualization:** Comprehensive explanations of the available analytical tools and visualization options.
+-   **Report Generation:** Instructions on creating reports.
+-   **Troubleshooting:** Solutions to common issues and frequently asked questions.
 
-For detailed help on specific pages within the app, use the **Help** button provided in the interface.
+## Acknowledgement
 
-## Acknowledgments
-
-This app and guide were developed by the **African Population and Health Research Center (APHRC)**.
+This app and guide were developed by the **African Population and Health Research Centre (APHRC)**.
