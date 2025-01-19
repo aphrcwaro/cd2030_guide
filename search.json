@@ -1,0 +1,346 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "cd2030 User Guide",
+    "section": "",
+    "text": "1 Introduction\nWelcome to the cd2030 User Guide! This guide is designed to help you navigate the features and functionality of the cd2030 Shiny app. It provides step-by-step instructions for data loading, analysis, visualization, and report generation.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#about-the-app",
+    "href": "index.html#about-the-app",
+    "title": "cd2030 User Guide",
+    "section": "1.1 About the App",
+    "text": "1.1 About the App\nThe cd2030 Shiny App is a tool for analysing, visualizing, and reporting cd2030 vaccines data. Designed for researchers, policy makers, and program managers, it integrates various datasets including UN estimates, WUENIC estimates, survey data, and health facility data, to generate actionable insights and customizable reports.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#key-features",
+    "href": "index.html#key-features",
+    "title": "cd2030 User Guide",
+    "section": "1.2 Key Features",
+    "text": "1.2 Key Features\nThe app offers a range features to streamline your data analysis workflow:\n\nData Integration: Easily upload and manage data from multiple sources. Supported formats and specific instructions will be detailed in the “Data Input” section.\nDynamic Visualizations: Generate charts, tables, and summaries to explore trends and patterns.\nCustom Annotations: Add notes and explanations directly within the app to enhance documentation and provide context for your analysis.\nReport Generation: Create reports in various formats to suit your needs.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "cd2030 User Guide",
+    "section": "1.3 Prerequisites",
+    "text": "1.3 Prerequisites\nBefore using the app, ensure you have the following:\n\nSoftware\n\nR (version 4.0 or higher)\nRStudio\n\nR Packages: The required R packages will be automatically installed upon first launch if not already present. A full list of dependencies can be found in the “Installation” section.\nData: Access to necessary datasets\n\nUN estimates\nWUENIC estimates\nCountry-specific survey data\nHealth facility datasets for analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-guide",
+    "href": "index.html#how-to-use-this-guide",
+    "title": "cd2030 User Guide",
+    "section": "1.4 How to Use This Guide",
+    "text": "1.4 How to Use This Guide\nThis guide is structured to guide you through the app’s functionalities, from set-up to advanced usage. Use the sidebar to navigate to specific sections:\n\nInstallation: Detailed instructions for installing the app and its dependencies.\nData Input: Step-by-step guidance on loading and managing your data.\nData Analysis and Visualization: Comprehensive explanations of the available analytical tools and visualization options.\nReport Generation: Instructions on creating reports.\nTroubleshooting: Solutions to common issues and frequently asked questions.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgement",
+    "href": "index.html#acknowledgement",
+    "title": "cd2030 User Guide",
+    "section": "1.5 Acknowledgement",
+    "text": "1.5 Acknowledgement\nThis app and guide were developed by the African Population and Health Research Centre (APHRC).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "getting-started.html",
+    "href": "getting-started.html",
+    "title": "2  Getting Started",
+    "section": "",
+    "text": "2.1 Prerequisites\nThis page will guide you through the steps required to install, set up, and launch the cd2030 Shiny App. Follow these instructions to ensure a smooth start.\nBefore using the app, ensure you have the following:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#prerequisites",
+    "href": "getting-started.html#prerequisites",
+    "title": "2  Getting Started",
+    "section": "",
+    "text": "Software:\n\nR (version 4.0 or higher recommended): Download it from CRAN.\nRStudio (latest version recommended): Download it from RStudio.\n\nData Access: Ensure you have access to the necessary datasets:\n\nUN estimates\nWUENIC estimates\nsurvey data",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#installing-the-app",
+    "href": "getting-started.html#installing-the-app",
+    "title": "2  Getting Started",
+    "section": "2.2 Installing the App",
+    "text": "2.2 Installing the App\nThe cd2030 Shiny App is hosted on GitHub. To install it:\n\nOpen RStudio.\nInstall the pak package (if not already installed):\n\n\nif (!require('pak')) install.packages(\"pak\")\n\nThis package manager simplifies the app installation process.\n\nInstall the cd2030 app:\n\n\npak::pak(\"damurka/cd2030\")\n\nThis will download and install the app on your system, along with all required packages.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#launching-the-app",
+    "href": "getting-started.html#launching-the-app",
+    "title": "2  Getting Started",
+    "section": "2.3 Launching the App",
+    "text": "2.3 Launching the App\nOnce installed, launch the app using the following commands:\n\nlibrary(cd2030)\ndashboard()\n\nThe app will open in your default web browser, ready for use.\n\n\n\n\n\n\n\n\nFigure 2.1: Launching the cd2030 Shiny App.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#next-steps",
+    "href": "getting-started.html#next-steps",
+    "title": "2  Getting Started",
+    "section": "2.4 Next Steps",
+    "text": "2.4 Next Steps\nWith the app installed and running, proceed to the App Features section to explore its functionality and workflows in detail.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "app-features.html",
+    "href": "app-features.html",
+    "title": "3  App Features",
+    "section": "",
+    "text": "3.1 Title Bar\nThis section details the main components of the cd2030 Shiny App interface: the Title Bar, Sidebar, and Main Panel (Body Content). Understanding these elements will help you navigate and use the app effectively.\nThe Title Bar, located at the top of the app, provides key information controls. The elements of the Title Bar, such as “Set Cache Directory/Save Cache” and “Download Report,” are only displayed after data has been loaded.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>App Features</span>"
+    ]
+  },
+  {
+    "objectID": "app-features.html#title-bar",
+    "href": "app-features.html#title-bar",
+    "title": "3  App Features",
+    "section": "",
+    "text": "3.1.1 Key Elements of the Title Bar\n\nContextual Information: Displays the current analyssis context, such as the country of analysis (e.g., “Senegal - Countdown Analysis”).\n\n\n\n\n\n\n\n\n\nFigure 3.1: The page title.\n\n\n\n\n\n\nCache Management\n\nSet Cache Directory: This button allows you to specify a directory for saving intermediate results and progress.\nSave Cache: This button allows you to save the progress of your analysis. This is useful for large analyses or for resuming a session later.\n\n\n\n\n\n\n\n\n\n\nFigure 3.2: The cache management button.\n\n\n\n\n\n\nDownload Report: This button allows you to generate the final report. The available download formats are Word and PDF.\n\n\n\n\n\n\n\n\n\nFigure 3.3: The cache management button.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>App Features</span>"
+    ]
+  },
+  {
+    "objectID": "app-features.html#sidebar",
+    "href": "app-features.html#sidebar",
+    "title": "3  App Features",
+    "section": "3.2 Sidebar",
+    "text": "3.2 Sidebar\nThe Sidebar, located on the left side of the app, provides navigation through the analysis workflow. The sections are arranged sequentially to guide you through the process.\n\n3.2.1 Sidebar Navigation\n\nIntroduction: Provides a brief overview of the app’s purpose and functionality.\n\n\n\n\n\n\n\n\n\nFigure 3.4: The Introduction page.\n\n\n\n\n\n\nLoad Data: Allows you to upload and manage your datasets (e.g. Health Facility Datasets, Master datasets, and cache file). It also allows you to download data diretly from the DHIS2 instance.\n\n\n\n\n\n\n\n\n\nFigure 3.5: The data loading page.\n\n\n\n\n\n\nQuality Checks: Provides tools for assessing data quality, include checks for consistency, completeness, and outliers. Subsections include:\n\nReporting Rate\nOutlier Detection\nConsistency Check\nData Completeness\nCalculate Ratios\nOverall Score\n\n\n\n\n\n\n\n\n\n\nFigure 3.6: The data quality checks section.\n\n\n\n\n\n\nAnalysis Set-up: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the sub-national survey and mapping data to the uploaded data.\n\n\n\n\n\n\n\n\n\nFigure 3.7: The analysis setup page.\n\n\n\n\n\n\nNational and Sub-national Analysis: Provides tools for analysing coverage and equity at both the national and sub-national levels. This pages are only active after completing the “Analysis Set-up” section.\n\n\n\n\n\n\n\n\n\nFigure 3.8: The analysis pages.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>App Features</span>"
+    ]
+  },
+  {
+    "objectID": "app-features.html#main-panelbody-content",
+    "href": "app-features.html#main-panelbody-content",
+    "title": "3  App Features",
+    "section": "3.3 Main Panel(Body Content)",
+    "text": "3.3 Main Panel(Body Content)\nThe main panel is the central workspace where the analysis result, visualizations, and interactive elements are displayed.\n\n3.3.1 Key Elements of the Main Panel\n\nPage Title: Displays the current module or analysis step (e.g., “Reporting Rate”).\n\n\n\n\n\n\n\n\n\nFigure 3.9: The page title.\n\n\n\n\n\n\nAction Buttons: Provides context-specific actions:\n\nGenerate Report: Downloads a report specific to the current page or analysis.\nAdd Notes: Allows you to add annotations and comments directly to the results or visualizations.\nGet Help: Provides context-sensitive help and documentation for the current page.\n\n\n\n\n\n\n\n\n\n\nFigure 3.10: The page actions.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>App Features</span>"
+    ]
+  },
+  {
+    "objectID": "data-input.html",
+    "href": "data-input.html",
+    "title": "Data Input",
+    "section": "",
+    "text": "Uploading Data\nThis page provides an introduction to two key functionalities of the app: Data Upload and DHIS2 Data Download. These tools enable efficient integration and preparation of the countdown data for analysis.\nEasily upload dataset formatted according to the Countdown Health Facility Data Format. This modules includes",
+    "crumbs": [
+      "Data Input"
+    ]
+  },
+  {
+    "objectID": "data-input.html#uploading-data",
+    "href": "data-input.html#uploading-data",
+    "title": "Data Input",
+    "section": "",
+    "text": "File Validation: Ensures your dataset complies with required standards.\nSupported formats: Accepts .xls, .xlsx, .dta and .rds files\nError Handling: Provides detailed feedback for resolving upload issues.",
+    "crumbs": [
+      "Data Input"
+    ]
+  },
+  {
+    "objectID": "data-input.html#dhis2-data-download",
+    "href": "data-input.html#dhis2-data-download",
+    "title": "Data Input",
+    "section": "DHIS2 Data Download",
+    "text": "DHIS2 Data Download\nSecurely connect to DHIS2 servers to fetch health data for analysis. Key features include:\n\nCustomizable Period: Select a specific date range for the data.\nCountry Selection: Fetch data tailored to the selected country’s settings.\nSecure Authentication: Your credentials are used securely and discarded after the session.",
+    "crumbs": [
+      "Data Input"
+    ]
+  },
+  {
+    "objectID": "data-input.html#why-use-these-tool",
+    "href": "data-input.html#why-use-these-tool",
+    "title": "Data Input",
+    "section": "Why Use These Tool?",
+    "text": "Why Use These Tool?\n\nQuickly integrate data into the app with minimal friction.\nBuilt-in validation ensues datasets meet analytical requirements.\nDownload data from DHIS2 with confidence in secure session-based authentication.\n\nBy following these guides, you can set up your data efficiently and ensure it is ready for detailed analysis in the app. Choose the appropriate section to get started:\n\n5  Upload Data\n6  DHIS2 Download",
+    "crumbs": [
+      "Data Input"
+    ]
+  },
+  {
+    "objectID": "data-preparation.html",
+    "href": "data-preparation.html",
+    "title": "4  Data Preparation",
+    "section": "",
+    "text": "This guide details how to prepare data into the Countdown Health Facility Data (HFD) Format.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "upload-data.html",
+    "href": "upload-data.html",
+    "title": "5  Upload Data",
+    "section": "",
+    "text": "5.1 1. Understanding the Upload Process\nThis guide details how to upload data into the cd2030 app, ensuring compatibility with the Countdown Health Facility Data (HFD) Format.\nThe Upload Data module allows you to:",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
+    ]
+  },
+  {
+    "objectID": "upload-data.html#understanding-the-upload-process",
+    "href": "upload-data.html#understanding-the-upload-process",
+    "title": "5  Upload Data",
+    "section": "",
+    "text": "Upload health facility data structured according to the Countdown HFD Format.\nValidate the uploaded file for format and data integrity.\nPrepare the data for analysis within the app.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
+    ]
+  },
+  {
+    "objectID": "upload-data.html#supported-file-formats",
+    "href": "upload-data.html#supported-file-formats",
+    "title": "5  Upload Data",
+    "section": "5.2 2. Supported File Formats",
+    "text": "5.2 2. Supported File Formats\nThe app supports the following file types:\n\nExcel Files (.xls, .xlsx): Primarily for raw or minimally processed data.\nStata Files (.dta): Recommended for processed and formatted data adhering to the HFD standard.\nR Data Files (.rds): For pre-processed data, settings, or cached data.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
+    ]
+  },
+  {
+    "objectID": "upload-data.html#uploading-your-file",
+    "href": "upload-data.html#uploading-your-file",
+    "title": "5  Upload Data",
+    "section": "5.3 3. Uploading Your File",
+    "text": "5.3 3. Uploading Your File\nOnce your data is prepared:\n\nNavigate to the Load Data section in the app’s sidebar.\nDrag and Drop: Drag your file into the designated upload area.\nBrowse: Alternatively, click Browse to select the file from your computer.\n\nThe app will automatically validate the uploaded file.\n\nSuccessful Upload: A confirmation message will appear: “Upload successful: Your file is ready for analysis.”\nUpload Errors: If errors are detected, an error message will be displayed. See the “Troubleshooting Uploads” section below.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
+    ]
+  },
+  {
+    "objectID": "upload-data.html#troubleshooting-uploads",
+    "href": "upload-data.html#troubleshooting-uploads",
+    "title": "5  Upload Data",
+    "section": "5.4 4. Troubleshooting Uploads",
+    "text": "5.4 4. Troubleshooting Uploads\nThe following table lists common upload errors and their solutions:\n\n\n\n\n\n\n\n\nError Message\nCause\nSolution\n\n\n\n\n“Unsupported file format”\nFile type not supported.\nSave your file as .xls, .xlsx, .dta, or .rds. .dta is the recommended format.\n\n\n“The following required columns are missing from the data: [column names]”\nMissing essential columns in the data.\nAdd the missing column(s) to your dataset and ensure their values are valid. Refer to the HFD Guidelines for required columns.\n\n\n“The following sheets are missing: [sheet names]” (Primarily for Excel files)\nMissing one or more required sheets in the Excel file.\nEnsure all required sheets are present and conform to the template. If working with .dta or .rds files, this error should not occur.\n\n\n“Sheet [Sheet Name] is empty” (Primarily for Excel files)\nThe sheet exists but contains no data.\nPopulate the sheet with valid data or remove the empty sheet. If working with .dta or .rds files, this error should not occur.\n\n\n“Key Columns ‘[column names]’ missing in [Sheet Name]” (Primarily for Excel files)\nA key column (district, year, or month) is missing from the specified sheet.\nAdd the missing column(s) to the sheet and ensure the data is structured correctly. If working with .dta or .rds files, this error should not occur.\n\n\n“Column name ‘[column name]’ must not be duplicated. Use .name_repair to specify repair.”\nDuplicate column names in the dataset.\nEnsure all column names are unique. Rename or remove duplicate columns.\n\n\n“Non-numeric values found in numeric column ‘[column name]’. These values have been coerced to NA.”\nA numeric column contains non-numeric data.\nCheck the specified column for non-numeric values (e.g., text, special characters). Correct these values or convert them to missing values (NA) before uploading.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
+    ]
+  },
+  {
+    "objectID": "upload-data.html#data-validation-within-the-app",
+    "href": "upload-data.html#data-validation-within-the-app",
+    "title": "5  Upload Data",
+    "section": "5.5 5. Data Validation within the App",
+    "text": "5.5 5. Data Validation within the App\nThe app performs the following validation checks during the upload process:\n\nFile Format Check: Confirms the file is in a supported format.\nSheet Presence Check (Excel only): Verifies that all required sheets are present.\nColumn Presence and Uniqueness Check: Ensures all required columns are present and unique.\nData Availability Check: Checks that required sheets/data are not empty and key columns are populated.\nData Type Validation: Checks that numeric columns contain valid numeric values. Non-numeric values will be coerced to NA.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
+    ]
+  },
+  {
+    "objectID": "upload-data.html#how-errors-are-handled",
+    "href": "upload-data.html#how-errors-are-handled",
+    "title": "5  Upload Data",
+    "section": "5.6 6. How Errors Are Handled",
+    "text": "5.6 6. How Errors Are Handled\n\nIf validation fails, the upload process stops, and an informative error message is displayed.\nConsult the “Troubleshooting Uploads” section for solutions to common errors.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
+    ]
+  },
+  {
+    "objectID": "dhis2-download.html",
+    "href": "dhis2-download.html",
+    "title": "6  DHIS2 Download",
+    "section": "",
+    "text": "6.1 1. Understanding the DHIS2 Download Process\nThis guide explains how to securely connect to DHIS2 using the cd2030 app and download relevant data.\nThe DHIS2 Download module allows you to:",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
+    ]
+  },
+  {
+    "objectID": "dhis2-download.html#understanding-the-dhis2-download-process",
+    "href": "dhis2-download.html#understanding-the-dhis2-download-process",
+    "title": "6  DHIS2 Download",
+    "section": "",
+    "text": "Securely connect to your DHIS2 instance.\nSelect the desired country and data period.\nDownload data in supported formats for use within the cd2030 app.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
+    ]
+  },
+  {
+    "objectID": "dhis2-download.html#connecting-to-dhis2",
+    "href": "dhis2-download.html#connecting-to-dhis2",
+    "title": "6  DHIS2 Download",
+    "section": "6.2 2. Connecting to DHIS2",
+    "text": "6.2 2. Connecting to DHIS2\nFollow these steps to establish a connection:\n\nEnter Your Credentials: Provide your DHIS2 username and password in the respective fields.\nSelect a Country: Choose the relevant country from the drop-down menu. This selection is crucial as it determines the DHIS2 instance the app will connect to.\nSet the Period: Define the date range for the data you wish to download using the Period selection tools. This allows you to specify the start and end dates for your data.\nClick Login: Press the Login button to initiate the connection process. The app will attempt to authenticate your credentials with the specified DHIS2 server and download the relevant data.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
+    ]
+  },
+  {
+    "objectID": "dhis2-download.html#downloading-data",
+    "href": "dhis2-download.html#downloading-data",
+    "title": "6  DHIS2 Download",
+    "section": "6.3 3. Downloading Data",
+    "text": "6.3 3. Downloading Data\nOnce a successful data download:\n\nSelect Download Format: Choose between the available download formats:\n\nDownload Master File: Downloads the data as a .dta (Stata) file.\nDownload Excel File: Downloads the data as a .xlsx (Excel) file.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
+    ]
+  },
+  {
+    "objectID": "dhis2-download.html#security-and-privacy",
+    "href": "dhis2-download.html#security-and-privacy",
+    "title": "6  DHIS2 Download",
+    "section": "6.4 4. Security and Privacy",
+    "text": "6.4 4. Security and Privacy\nThe cd2030 app prioritizes the security and privacy of your DHIS2 credentials:\n\nTemporary Credentials: Your DHIS2 username and password are used only temporarily during the current session.\nNo Storage of Credentials: The app does not store your credentials persistently. Once the session ends or you close the app, all credential information is discarded.\nSecure Connection: The app uses secure communication protocols (HTTPS) to connect to DHIS2 servers, protecting your data during transmission.\nOpen-Source Code: The app’s open-source nature allows for independent review of its code, ensuring transparency in how credentials and data are handled.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
+    ]
+  },
+  {
+    "objectID": "dhis2-download.html#troubleshooting-dhis2-connections-and-downloads",
+    "href": "dhis2-download.html#troubleshooting-dhis2-connections-and-downloads",
+    "title": "6  DHIS2 Download",
+    "section": "6.5 5. Troubleshooting DHIS2 Connections and Downloads",
+    "text": "6.5 5. Troubleshooting DHIS2 Connections and Downloads\nThe following table lists common errors and their solutions:\n\n\n\n\n\n\n\n\nError Message\nCause\nSolution\n\n\n\n\n“Error: Country must be selected”\nNo country was selected from the drop-down menu.\nSelect the appropriate country from the drop-down list.\n\n\n“Error: Username must be provided”\nThe username field is empty.\nEnter your DHIS2 username in the designated field.\n\n\n“Error: Password must be provided”\nThe password field is empty.\nEnter your DHIS2 password in the designated field.\n\n\n“Download Error: Failed to retrieve user profile.”\nThere is an issue with the DHIS2 server, a network connectivity problem, incorrect credentials, or the selected country’s configuration within the app.\n\nVerify your internet connection.\nDouble-check your DHIS2 username and password for typos.\nEnsure the DHIS2 server is operational by accessing it through a web browser.\nConfirm that you have access to the selected country’s DHIS2 instance.\nIf the problem persists, contact your DHIS2 administrator or the app’s support team.\n\n\n\n“Download Error: Could not retrieve data for the specified period.”\nNo data exists on the DHIS2 server for the selected country and period, or the user lacks the necessary permissions.\n\nVerify that data exists in DHIS2 for the chosen country and time period by checking DHIS2 directly.\nEnsure your DHIS2 user account has the required permissions to access the data.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
+    ]
+  }
+]
