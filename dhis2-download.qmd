@@ -2,7 +2,7 @@
 
 This guide explains how to securely connect to DHIS2 using the cd2030 app and download relevant data.
 
-## 1. Understanding the DHIS2 Download Process
+## Understanding the DHIS2 Download Process
 
 The `DHIS2 Download` module allows you to:
 
@@ -10,7 +10,7 @@ The `DHIS2 Download` module allows you to:
 -   Select the desired country and data period.
 -   Download data in supported formats for use within the cd2030 app.
 
-## 2. Connecting to DHIS2
+## Connecting to DHIS2
 
 Follow these steps to establish a connection:
 
@@ -19,15 +19,13 @@ Follow these steps to establish a connection:
 3.  **Set the Period:** Define the date range for the data you wish to download using the `Period` selection tools. This allows you to specify the start and end dates for your data.
 4.  **Click Login:** Press the `Login` button to initiate the connection process. The app will attempt to authenticate your credentials with the specified DHIS2 server and download the relevant data.
 
-## 3. Downloading Data
+## Downloading Data
 
-Once a successful data download:
-
--   **Select Download Format:** Choose between the available download formats:
+Once a successful data download choose between the available download formats:
     -   **Download Master File:** Downloads the data as a `.dta` (Stata) file.
     -   **Download Excel File:** Downloads the data as a `.xlsx` (Excel) file.
 
-## 4. Security and Privacy
+## Security and Privacy
 
 The cd2030 app prioritizes the security and privacy of your DHIS2 credentials:
 
@@ -36,7 +34,7 @@ The cd2030 app prioritizes the security and privacy of your DHIS2 credentials:
 -   **Secure Connection:** The app uses secure communication protocols (HTTPS) to connect to DHIS2 servers, protecting your data during transmission.
 -   **Open-Source Code:** The app's open-source nature allows for independent review of its code, ensuring transparency in how credentials and data are handled.
 
-## 5. Troubleshooting DHIS2 Connections and Downloads
+## Troubleshooting DHIS2 Connections and Downloads
 
 The following table lists common errors and their solutions:
 

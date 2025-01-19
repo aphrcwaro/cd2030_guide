@@ -1,0 +1,140 @@
+# Analysis Setup {#sec-analysis-setup}
+
+The **Analysis Set-up** feature allows users to configure national rates and upload necessary survey data to facilitate analysis. This guide provides a step-by-step explanation of how to set up national rates and upload survey data using the interface. Please note that file uploads are mandatory to proceed with any analysis beyond the set-up phase.
+
+```{r}
+#| label: fig-ds-analysis-setup
+#| echo: false
+#| fig-cap: |
+#|   The analysis setup page.
+#| fig-alt: |
+#|   The analysis setup page.
+#| out.width: NULL
+
+knitr::include_graphics("images/analysis-setup.jpg", dpi = 270)
+```
+
+## Setup National Rates
+
+The **Set-up National Rates** section enables you to input key national-level indicators. Follow these steps to configure them:
+
+### Fields to Complete:
+
+1.  **Neonatal Mortality Rate**:
+    -   Enter the neonatal mortality rate (e.g., `0.025`).
+2.  **Post Neonatal Mortality Rate**:
+    -   Specify the post-neonatal mortality rate (e.g., `0.024`).
+3.  **Twin Rate**:
+    -   Input the rate of twin births (e.g., `0.015`).
+4.  **Pregnancy Loss**:
+    -   Provide the rate of pregnancy loss (e.g., `0.03`).
+5.  **Still Birth Rate**:
+    -   Enter the stillbirth rate (e.g., `0.02`).
+6.  **ANC1 to Penta1 Mortality Rate**:
+    -   Include the ANC1 to Penta1 mortality rate (e.g., `0.025`).
+7.  **ANC1 Survey**:
+    -   Input the ANC1 survey coverage percentage (e.g., `98`).
+8.  **Penta1 Survey**:
+    -   Provide the Penta1 survey coverage percentage (e.g., `97`).
+
+### Steps:
+
+-   Enter the appropriate values for each field.
+-   Ensure accuracy as these rates are crucial for subsequent analyses.
+
+## Upload Survey Data
+
+The **Upload Survey Data** section allows you to upload necessary datasets for analysis. It supports files in `.dta` format. Follow the instructions below:
+
+### Upload UN Estimates Data
+
+-   Click on **"Browse or Drop..."** under the **Upload UN Estimates data** section.
+-   Select the file containing UN estimates data in `.dta` format.
+-   Wait for the upload confirmation message.
+
+### Upload WUENIC Estimates
+
+-   Similarly, click on **"Browse or Drop..."** under the **Upload WUENIC estimates** section.
+-   Choose the file with WUENIC data in `.dta` format.
+-   Confirm the upload completion.
+
+### Configure Survey Folder
+
+-   Click **"Browse or Select..."** under the **Survey Folder** section.
+-   Navigate to the folder containing your survey files (refer to the [Select Directory](#sec-select-directory)).
+-   Select the folder and verify the folder path.
+
+### Subnational Manual Data Mapping
+
+-   Use the **Map Survey Data** button to map subnational survey data.
+-   Use the **Map Mapping Data** button to map shapefile data
+
+## Manual Mapping of Survey Data
+
+The **Manual Mapping of Survey Data** feature enables users to align survey data with subnational regions accurately. This is crucial for ensuring consistency across administrative regions.
+
+### Steps to Map Survey Data:
+
+1.  **Open the Manual Mapping Window**:
+    -   Click on the **"Map Survey Data"** button in the **Subnational Manual Data Mapping** section.
+
+```{r}
+#| label: fig-ds-map-survey
+#| echo: false
+#| fig-cap: |
+#|   The Manual mapping of subantional survey data dialog.
+#| fig-alt: |
+#|   The Manual mapping of subantional survey data dialog.
+#| out.width: NULL
+
+knitr::include_graphics("images/map-survey.jpg", dpi = 270)
+```
+
+2.  **Review the Regions**:
+    -   The mapping window will display a list of survey regions (e.g., "DRS Dakar", "DRS Diourbel").
+    -   Each region corresponds to a dropdown menu for mapping.
+3.  **Select Corresponding Regions**:
+    -   For each region in the left column, select the appropriate mapped region from the dropdown menu on the right.
+    -   Ensure all regions are mapped correctly to avoid discrepancies.
+4.  **Save the Mapping**:
+    -   After completing the mapping for all regions, click the **Save Mapping** button to confirm your selections.
+    -   Ensure a confirmation message appears (e.g., "Mapping saved successfully").
+5.  **Verify the Mapping**:
+    -   Reopen the mapping window if needed to verify that all regions are mapped correctly.
+
+### Notes:
+
+-   Manual mapping is optional. If the survey regions already align with the required subnational structure, mapping can be skipped entirely.
+-   However, if mapping is required, it must be completed fully. Partial mapping is not allowed.
+-   Double-check each selection to ensure accuracy.
+
+### Mandatory for Analysis
+
+Uploading all required files is essential. Without these files, you will not be able to proceed with:
+
+-   **Denominator Assessment**
+-   **National Analysis**
+-   **Subnational Analysis**
+
+Ensure all files are uploaded before initiating these steps.
+
+## Best Practices
+
+1.  **Ensure Data Formats**: Upload files in `.dta` format only, as other formats are not supported.
+
+2.  **Organize Data**: Maintain a structured folder with properly named files to avoid confusion during uploads.
+
+3.  **Validate Inputs**: Double-check all input values and uploaded files for accuracy.
+
+4.  **Monitor Upload Status**: Verify that all uploads show a success message before proceeding.
+
+## Troubleshooting
+
+1.  **File Upload Issues**:
+    -   Ensure the file is in `.dta` format.
+    -   Confirm that the file path is accessible.
+2.  **Incorrect Rates**:
+    -   If you entered incorrect rates, re-enter the values and save them.
+3.  **Survey Folder Not Set**:
+    -   Ensure the folder exists and has proper permissions.
+    -   Retry selecting the folder if the issue persists.

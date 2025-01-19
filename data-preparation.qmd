@@ -1,3 +1,59 @@
 # Data Preparation {#sec-data-preparation}
 
-This guide details how to prepare data into the Countdown Health Facility Data (HFD) Format.
+This document outlines instructions for preparing data for the **Country Analysis of Vaccine Indicators at the District Level**. The data focuses on vaccines and will assess health service utilization at national and sub-national levels. Teams will extract and compile data from DHIS2 using a standardized template.
+
+## General Guidelines
+
+Follow these steps to ensure accurate and complete data preparation:
+
+1.  **Spreadsheet Structure**: The template consists of the following worksheets:
+    -   Admin_data
+    -   Population_data
+    -   Reporting_completeness
+    -   Service_data_1
+    -   Service_data_2
+2.  **Data Requirements**: Extract monthly district-level data for at least **three years**.
+3.  **Template Use**: Do not alter the provided template’s structure or columns unless requested.
+4.  **Consistency**:
+    -   Ensure district names are uniform and listed in the same order across all worksheets.
+    -   Use the most recent district classification if available; otherwise, use the division covering the longest time span.
+5.  **Data Extraction Methods**: Data can be extracted using either of the following methods:
+    -   **Manual**: Export indicators from DHIS2 to a CSV file and compile them in the provided template.
+    -   **API**: Use the GFF-provided API for automated data extraction into a CSV file, then import it into the template.
+
+## Worksheet Instructions
+
+Adhere to worksheet-specific instructions to ensure accurate analysis and coverage estimates.
+
+### Admin_data
+
+-   Enter administrative details (e.g., district names, codes).
+-   This worksheet serves as the master list for districts; ensure complete consistency with other worksheets.
+
+### Population_data
+
+-   Populate population estimates, including demographic breakdowns specified in the template.
+
+### Reporting_completeness
+
+-   Record health facility reporting completeness (e.g., monthly report submission rates).
+
+### Service_data_1 and Service_data_2
+
+-   Include service delivery indicators such as antenatal care or immunization coverage.
+-   Ensure alignment with the template’s indicator requirements.
+
+## Data Extraction Tools
+
+### Manual Extraction
+
+1.  Log in to DHIS2.
+2.  Export required indicators to a CSV file.
+3.  Compile the data into the appropriate worksheets.
+
+### API-Based Extraction
+
+1.  Access the GFF API with DHIS2 credentials.
+2.  Extract required indicators into a CSV file.
+3.  Import the CSV data into the template.
+4.  Coordinate with the Ministry of Health for API set-up if needed.

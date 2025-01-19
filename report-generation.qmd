@@ -1,0 +1,91 @@
+# Report Generation {#sec-report-generation}
+
+The **Report Generation** feature allows users to create and download customized reports based on the analysis results. This guide outlines the steps for selecting a format, generating, and downloading a report using the interface.
+
+## Steps to Generate a Report
+
+### Open the Download Options Dialog
+- Navigate to the relevant analysis section (e.g., National Coverage).
+- Click the **"Generate Report"** button to open the **Download Options** dialog.
+
+```{r}
+#| label: fig-ds-report-generate
+#| echo: false
+#| fig-cap: |
+#|   The download options dialog.
+#| fig-alt: |
+#|   The download options dialog.
+#| out.width: NULL
+
+knitr::include_graphics("images/generate-report.jpg", dpi = 270)
+```
+
+### **2. Select the Report Format**
+- In the dialog, choose a report format from the dropdown menu:
+  - Options include **Word** or **PDF** formats.
+- Once the desired format is selected, proceed to the next step.
+
+### **3. Generate the Report**
+- Click the **"Generate Report"** button to initiate the report creation process.
+- A loading screen will appear.
+  
+```{r}
+#| label: fig-ds-report-generating
+#| echo: false
+#| fig-cap: |
+#|   The generate report loading screen.
+#| fig-alt: |
+#|   The generate report loading screen.
+#| out.width: NULL
+
+knitr::include_graphics("images/generating-report.jpg", dpi = 270)
+```
+
+- Wait for the process to complete. Do not close the dialog during this step.
+
+### **4. Download the Report**
+- Once the report is successfully generated, a confirmation screen will appear.
+  
+```{r}
+#| label: fig-ds-download-report
+#| echo: false
+#| fig-cap: |
+#|   The download report dialog
+#| fig-alt: |
+#|   The download report dialog.
+#| out.width: NULL
+
+knitr::include_graphics("images/download-report.jpg", dpi = 270)
+```
+
+- Click the **"Download Report"** button to save the file to your computer.
+- Alternatively, you can click **"Dismiss"** to close the dialog without downloading.
+
+## Best Practices
+
+1. **Select the Appropriate Format**:
+   - Choose a format that suits your intended use (e.g., Word for editing, PDF for sharing).
+
+2. **Ensure Analysis is Complete**:
+   - Verify that all necessary inputs and analyses are finalized before generating the report.
+
+3. **Save the Report**:
+   - Download and save the report immediately to avoid having to regenerate it later.
+
+4. **Avoid Interruptions**:
+   - Do not close the application or navigate away during the generation process.
+
+## Troubleshooting
+
+1. **Report Generation Fails**:
+   - Ensure all required inputs for the analysis are complete.
+   - Retry generating the report.
+
+2. **Incorrect Format Selected**:
+   - Regenerate the report by selecting the correct format.
+
+3. **Report Not Downloaded**:
+   - If you missed downloading, repeat the generation process.
+
+4. **Loading Issues**:
+   - If the generation process takes too long, check your internet connection or system resources.

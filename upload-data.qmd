@@ -2,7 +2,7 @@
 
 This guide details how to upload data into the cd2030 app, ensuring compatibility with the Countdown Health Facility Data (HFD) Format.
 
-## 1. Understanding the Upload Process
+## Understanding the Upload Process
 
 The `Upload Data` module allows you to:
 
@@ -10,15 +10,15 @@ The `Upload Data` module allows you to:
 -   Validate the uploaded file for format and data integrity.
 -   Prepare the data for analysis within the app.
 
-## 2. Supported File Formats
+## Supported File Formats
 
 The app supports the following file types:
 
 -   **Excel Files (`.xls`, `.xlsx`):** Primarily for raw or minimally processed data.
--   **Stata Files (`.dta`):** Recommended for processed and formatted data adhering to the HFD standard.
+-   **Stata Files (`.dta`):** Processed and formatted data adhering to the HFD standard.
 -   **R Data Files (`.rds`):** For pre-processed data, settings, or cached data.
 
-## 3. Uploading Your File
+## Uploading Your File
 
 Once your data is prepared:
 
@@ -31,9 +31,7 @@ The app will automatically validate the uploaded file.
 -   **Successful Upload:** A confirmation message will appear: *"Upload successful: Your file is ready for analysis."*
 -   **Upload Errors:** If errors are detected, an error message will be displayed. See the "Troubleshooting Uploads" section below.
 
-------------------------------------------------------------------------
-
-## 4. Troubleshooting Uploads
+## Troubleshooting Uploads
 
 The following table lists common upload errors and their solutions:
 
@@ -47,9 +45,7 @@ The following table lists common upload errors and their solutions:
 | "Column name '\[column name\]' must not be duplicated. Use `.name_repair` to specify repair." | Duplicate column names in the dataset. | Ensure all column names are unique. Rename or remove duplicate columns. |
 | "Non-numeric values found in numeric column '\[column name\]'. These values have been coerced to NA." | A numeric column contains non-numeric data. | Check the specified column for non-numeric values (e.g., text, special characters). Correct these values or convert them to missing values (NA) before uploading. |
 
-------------------------------------------------------------------------
-
-## 5. Data Validation within the App
+## Data Validation within the App
 
 The app performs the following validation checks during the upload process:
 
@@ -59,7 +55,7 @@ The app performs the following validation checks during the upload process:
 4.  **Data Availability Check:** Checks that required sheets/data are not empty and key columns are populated.
 5.  **Data Type Validation:** Checks that numeric columns contain valid numeric values. Non-numeric values will be coerced to NA.
 
-## 6. How Errors Are Handled
+## How Errors Are Handled
 
 -   If validation fails, the upload process stops, and an informative error message is displayed.
 -   Consult the "Troubleshooting Uploads" section for solutions to common errors.
