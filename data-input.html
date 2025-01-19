@@ -163,6 +163,30 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./select-directory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Select Directory</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./analysis-setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Analysis Setup</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Documentation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./report-generation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Report Generation</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -175,7 +199,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#uploading-data" id="toc-uploading-data" class="nav-link active" data-scroll-target="#uploading-data">Uploading Data</a></li>
   <li><a href="#dhis2-data-download" id="toc-dhis2-data-download" class="nav-link" data-scroll-target="#dhis2-data-download">DHIS2 Data Download</a></li>
-  <li><a href="#why-use-these-tool" id="toc-why-use-these-tool" class="nav-link" data-scroll-target="#why-use-these-tool">Why Use These Tool?</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/data-input.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -204,9 +227,9 @@ ul.task-list li input[type="checkbox"] {
 <p>This page provides an introduction to two key functionalities of the app: <strong>Data Upload</strong> and <strong>DHIS2 Data Download</strong>. These tools enable efficient integration and preparation of the countdown data for analysis.</p>
 <section id="uploading-data" class="level2">
 <h2 class="anchored" data-anchor-id="uploading-data">Uploading Data</h2>
-<p>Easily upload dataset formatted according to the <strong>Countdown Health Facility Data Format</strong>. This modules includes</p>
+<p>Easily upload the dataset formatted according to the <strong>Countdown Health Facility Data Format</strong>. This module includes</p>
 <ul>
-<li><strong>File Validation:</strong> Ensures your dataset complies with required standards.</li>
+<li><strong>File Validation:</strong> Ensures your dataset complies with the required standards.</li>
 <li><strong>Supported formats:</strong> Accepts <code>.xls</code>, <code>.xlsx</code>, <code>.dta</code> and <code>.rds</code> files</li>
 <li><strong>Error Handling:</strong> Provides detailed feedback for resolving upload issues.</li>
 </ul>
@@ -219,16 +242,9 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Country Selection:</strong> Fetch data tailored to the selected country’s settings.</li>
 <li><strong>Secure Authentication:</strong> Your credentials are used securely and discarded after the session.</li>
 </ul>
-</section>
-<section id="why-use-these-tool" class="level2">
-<h2 class="anchored" data-anchor-id="why-use-these-tool">Why Use These Tool?</h2>
-<ol type="1">
-<li>Quickly integrate data into the app with minimal friction.</li>
-<li>Built-in validation ensues datasets meet analytical requirements.</li>
-<li>Download data from DHIS2 with confidence in secure session-based authentication.</li>
-</ol>
 <p>By following these guides, you can set up your data efficiently and ensure it is ready for detailed analysis in the app. Choose the appropriate section to get started:</p>
 <ul>
+<li><a href="data-preparation.html" class="quarto-xref"><span>4&nbsp; Data Preparation</span></a></li>
 <li><a href="upload-data.html" class="quarto-xref"><span>5&nbsp; Upload Data</span></a></li>
 <li><a href="dhis2-download.html" class="quarto-xref"><span>6&nbsp; DHIS2 Download</span></a></li>
 </ul>
@@ -327,7 +343,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/github\.com\/damurka\/cd2030\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

@@ -8,7 +8,7 @@
 
 <meta name="author" content="David Kariuki">
 
-<title>6&nbsp; DHIS2 Download – cd2030 User Guide</title>
+<title>10&nbsp; Report Generation – cd2030 User Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./select-directory.html" rel="next">
-<link href="./upload-data.html" rel="prev">
+<link href="./documentation.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-input.html">Data Input</a></li><li class="breadcrumb-item"><a href="./dhis2-download.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./report-generation.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Report Generation</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -157,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dhis2-download.html" class="sidebar-item-text sidebar-link active">
+  <a href="./dhis2-download.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></span></a>
   </div>
 </li>
@@ -183,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./report-generation.html" class="sidebar-item-text sidebar-link">
+  <a href="./report-generation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Report Generation</span></span></a>
   </div>
 </li>
@@ -197,20 +196,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#understanding-the-dhis2-download-process" id="toc-understanding-the-dhis2-download-process" class="nav-link active" data-scroll-target="#understanding-the-dhis2-download-process"><span class="header-section-number">6.1</span> Understanding the DHIS2 Download Process</a></li>
-  <li><a href="#connecting-to-dhis2" id="toc-connecting-to-dhis2" class="nav-link" data-scroll-target="#connecting-to-dhis2"><span class="header-section-number">6.2</span> Connecting to DHIS2</a></li>
-  <li><a href="#downloading-data" id="toc-downloading-data" class="nav-link" data-scroll-target="#downloading-data"><span class="header-section-number">6.3</span> Downloading Data</a></li>
-  <li><a href="#security-and-privacy" id="toc-security-and-privacy" class="nav-link" data-scroll-target="#security-and-privacy"><span class="header-section-number">6.4</span> Security and Privacy</a></li>
-  <li><a href="#troubleshooting-dhis2-connections-and-downloads" id="toc-troubleshooting-dhis2-connections-and-downloads" class="nav-link" data-scroll-target="#troubleshooting-dhis2-connections-and-downloads"><span class="header-section-number">6.5</span> Troubleshooting DHIS2 Connections and Downloads</a></li>
+  <li><a href="#steps-to-generate-a-report" id="toc-steps-to-generate-a-report" class="nav-link active" data-scroll-target="#steps-to-generate-a-report"><span class="header-section-number">10.1</span> Steps to Generate a Report</a>
+  <ul class="collapse">
+  <li><a href="#open-the-download-options-dialog" id="toc-open-the-download-options-dialog" class="nav-link" data-scroll-target="#open-the-download-options-dialog"><span class="header-section-number">10.1.1</span> Open the Download Options Dialog</a></li>
+  <li><a href="#select-the-report-format" id="toc-select-the-report-format" class="nav-link" data-scroll-target="#select-the-report-format"><span class="header-section-number">10.1.2</span> <strong>2. Select the Report Format</strong></a></li>
+  <li><a href="#generate-the-report" id="toc-generate-the-report" class="nav-link" data-scroll-target="#generate-the-report"><span class="header-section-number">10.1.3</span> <strong>3. Generate the Report</strong></a></li>
+  <li><a href="#download-the-report" id="toc-download-the-report" class="nav-link" data-scroll-target="#download-the-report"><span class="header-section-number">10.1.4</span> <strong>4. Download the Report</strong></a></li>
+  </ul></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices"><span class="header-section-number">10.2</span> Best Practices</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting"><span class="header-section-number">10.3</span> Troubleshooting</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/dhis2-download.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/report-generation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-input.html">Data Input</a></li><li class="breadcrumb-item"><a href="./dhis2-download.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-dhis2-download" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></span></h1>
+<h1 class="title"><span id="sec-report-generation" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Report Generation</span></span></h1>
 </div>
 
 
@@ -227,93 +230,131 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This guide explains how to securely connect to DHIS2 using the cd2030 app and download relevant data.</p>
-<section id="understanding-the-dhis2-download-process" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="understanding-the-dhis2-download-process"><span class="header-section-number">6.1</span> Understanding the DHIS2 Download Process</h2>
-<p>The <code>DHIS2 Download</code> module allows you to:</p>
+<p>The <strong>Report Generation</strong> feature allows users to create and download customized reports based on the analysis results. This guide outlines the steps for selecting a format, generating, and downloading a report using the interface.</p>
+<section id="steps-to-generate-a-report" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="steps-to-generate-a-report"><span class="header-section-number">10.1</span> Steps to Generate a Report</h2>
+<section id="open-the-download-options-dialog" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="open-the-download-options-dialog"><span class="header-section-number">10.1.1</span> Open the Download Options Dialog</h3>
 <ul>
-<li>Securely connect to your DHIS2 instance.</li>
-<li>Select the desired country and data period.</li>
-<li>Download data in supported formats for use within the cd2030 app.</li>
+<li>Navigate to the relevant analysis section (e.g., National Coverage).</li>
+<li>Click the <strong>“Generate Report”</strong> button to open the <strong>Download Options</strong> dialog.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ds-report-generate" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The download options dialog. ">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ds-report-generate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/generate-report.jpg" class="img-fluid figure-img" alt="The download options dialog. ">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ds-report-generate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.1: The download options dialog.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="select-the-report-format" class="level3" data-number="10.1.2">
+<h3 data-number="10.1.2" class="anchored" data-anchor-id="select-the-report-format"><span class="header-section-number">10.1.2</span> <strong>2. Select the Report Format</strong></h3>
+<ul>
+<li>In the dialog, choose a report format from the dropdown menu:
+<ul>
+<li>Options include <strong>Word</strong> or <strong>PDF</strong> formats.</li>
+</ul></li>
+<li>Once the desired format is selected, proceed to the next step.</li>
 </ul>
 </section>
-<section id="connecting-to-dhis2" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="connecting-to-dhis2"><span class="header-section-number">6.2</span> Connecting to DHIS2</h2>
-<p>Follow these steps to establish a connection:</p>
+<section id="generate-the-report" class="level3" data-number="10.1.3">
+<h3 data-number="10.1.3" class="anchored" data-anchor-id="generate-the-report"><span class="header-section-number">10.1.3</span> <strong>3. Generate the Report</strong></h3>
+<ul>
+<li>Click the <strong>“Generate Report”</strong> button to initiate the report creation process.</li>
+<li>A loading screen will appear.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ds-report-generating" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The generate report loading screen. ">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ds-report-generating-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/generating-report.jpg" class="img-fluid figure-img" alt="The generate report loading screen. ">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ds-report-generating-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.2: The generate report loading screen.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Wait for the process to complete. Do not close the dialog during this step.</li>
+</ul>
+</section>
+<section id="download-the-report" class="level3" data-number="10.1.4">
+<h3 data-number="10.1.4" class="anchored" data-anchor-id="download-the-report"><span class="header-section-number">10.1.4</span> <strong>4. Download the Report</strong></h3>
+<ul>
+<li>Once the report is successfully generated, a confirmation screen will appear.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ds-download-report" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The download report dialog. ">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ds-download-report-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/download-report.jpg" class="img-fluid figure-img" alt="The download report dialog. ">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ds-download-report-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.3: The download report dialog
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Click the <strong>“Download Report”</strong> button to save the file to your computer.</li>
+<li>Alternatively, you can click <strong>“Dismiss”</strong> to close the dialog without downloading.</li>
+</ul>
+</section>
+</section>
+<section id="best-practices" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="best-practices"><span class="header-section-number">10.2</span> Best Practices</h2>
 <ol type="1">
-<li><strong>Enter Your Credentials:</strong> Provide your DHIS2 <strong>username</strong> and <strong>password</strong> in the respective fields.</li>
-<li><strong>Select a Country:</strong> Choose the relevant country from the drop-down menu. This selection is crucial as it determines the DHIS2 instance the app will connect to.</li>
-<li><strong>Set the Period:</strong> Define the date range for the data you wish to download using the <code>Period</code> selection tools. This allows you to specify the start and end dates for your data.</li>
-<li><strong>Click Login:</strong> Press the <code>Login</code> button to initiate the connection process. The app will attempt to authenticate your credentials with the specified DHIS2 server and download the relevant data.</li>
+<li><strong>Select the Appropriate Format</strong>:
+<ul>
+<li>Choose a format that suits your intended use (e.g., Word for editing, PDF for sharing).</li>
+</ul></li>
+<li><strong>Ensure Analysis is Complete</strong>:
+<ul>
+<li>Verify that all necessary inputs and analyses are finalized before generating the report.</li>
+</ul></li>
+<li><strong>Save the Report</strong>:
+<ul>
+<li>Download and save the report immediately to avoid having to regenerate it later.</li>
+</ul></li>
+<li><strong>Avoid Interruptions</strong>:
+<ul>
+<li>Do not close the application or navigate away during the generation process.</li>
+</ul></li>
 </ol>
 </section>
-<section id="downloading-data" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="downloading-data"><span class="header-section-number">6.3</span> Downloading Data</h2>
-<p>Once a successful data download choose between the available download formats: - <strong>Download Master File:</strong> Downloads the data as a <code>.dta</code> (Stata) file. - <strong>Download Excel File:</strong> Downloads the data as a <code>.xlsx</code> (Excel) file.</p>
-</section>
-<section id="security-and-privacy" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="security-and-privacy"><span class="header-section-number">6.4</span> Security and Privacy</h2>
-<p>The cd2030 app prioritizes the security and privacy of your DHIS2 credentials:</p>
+<section id="troubleshooting" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">10.3</span> Troubleshooting</h2>
+<ol type="1">
+<li><strong>Report Generation Fails</strong>:
 <ul>
-<li><strong>Temporary Credentials:</strong> Your DHIS2 username and password are used only temporarily during the current session.</li>
-<li><strong>No Storage of Credentials:</strong> The app does <em>not</em> store your credentials persistently. Once the session ends or you close the app, all credential information is discarded.</li>
-<li><strong>Secure Connection:</strong> The app uses secure communication protocols (HTTPS) to connect to DHIS2 servers, protecting your data during transmission.</li>
-<li><strong>Open-Source Code:</strong> The app’s open-source nature allows for independent review of its code, ensuring transparency in how credentials and data are handled.</li>
-</ul>
-</section>
-<section id="troubleshooting-dhis2-connections-and-downloads" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="troubleshooting-dhis2-connections-and-downloads"><span class="header-section-number">6.5</span> Troubleshooting DHIS2 Connections and Downloads</h2>
-<p>The following table lists common errors and their solutions:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 46%">
-<col style="width: 32%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Error Message</th>
-<th style="text-align: left;">Cause</th>
-<th style="text-align: left;">Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">“Error: Country must be selected”</td>
-<td style="text-align: left;">No country was selected from the drop-down menu.</td>
-<td style="text-align: left;">Select the appropriate country from the drop-down list.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">“Error: Username must be provided”</td>
-<td style="text-align: left;">The username field is empty.</td>
-<td style="text-align: left;">Enter your DHIS2 username in the designated field.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">“Error: Password must be provided”</td>
-<td style="text-align: left;">The password field is empty.</td>
-<td style="text-align: left;">Enter your DHIS2 password in the designated field.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">“Download Error: Failed to retrieve user profile.”</td>
-<td style="text-align: left;">There is an issue with the DHIS2 server, a network connectivity problem, incorrect credentials, or the selected country’s configuration within the app.</td>
-<td style="text-align: left;"><ul>
-<li><p>Verify your internet connection.</p></li>
-<li><p>Double-check your DHIS2 username and password for typos.</p></li>
-<li><p>Ensure the DHIS2 server is operational by accessing it through a web browser.</p></li>
-<li><p>Confirm that you have access to the selected country’s DHIS2 instance.</p></li>
-<li><p>If the problem persists, contact your DHIS2 administrator or the app’s support team.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">“Download Error: Could not retrieve data for the specified period.”</td>
-<td style="text-align: left;">No data exists on the DHIS2 server for the selected country and period, or the user lacks the necessary permissions.</td>
-<td style="text-align: left;"><ul>
-<li>Verify that data exists in DHIS2 for the chosen country and time period by checking DHIS2 directly.</li>
-<li>Ensure your DHIS2 user account has the required permissions to access the data.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+<li>Ensure all required inputs for the analysis are complete.</li>
+<li>Retry generating the report.</li>
+</ul></li>
+<li><strong>Incorrect Format Selected</strong>:
+<ul>
+<li>Regenerate the report by selecting the correct format.</li>
+</ul></li>
+<li><strong>Report Not Downloaded</strong>:
+<ul>
+<li>If you missed downloading, repeat the generation process.</li>
+</ul></li>
+<li><strong>Loading Issues</strong>:
+<ul>
+<li>If the generation process takes too long, check your internet connection or system resources.</li>
+</ul></li>
+</ol>
 
 
 </section>
@@ -738,14 +779,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./upload-data.html" class="pagination-link" aria-label="Upload Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Upload Data</span></span>
+      <a href="./documentation.html" class="pagination-link" aria-label="Documentation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Documentation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./select-directory.html" class="pagination-link" aria-label="Select Directory">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Select Directory</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -756,7 +794,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/dhis2-download.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/report-generation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

@@ -163,13 +163,55 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./select-directory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Select Directory</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./analysis-setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Analysis Setup</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Documentation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./report-generation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Report Generation</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#general-guidelines" id="toc-general-guidelines" class="nav-link active" data-scroll-target="#general-guidelines"><span class="header-section-number">4.1</span> General Guidelines</a></li>
+  <li><a href="#worksheet-instructions" id="toc-worksheet-instructions" class="nav-link" data-scroll-target="#worksheet-instructions"><span class="header-section-number">4.2</span> Worksheet Instructions</a>
+  <ul class="collapse">
+  <li><a href="#admin_data" id="toc-admin_data" class="nav-link" data-scroll-target="#admin_data"><span class="header-section-number">4.2.1</span> Admin_data</a></li>
+  <li><a href="#population_data" id="toc-population_data" class="nav-link" data-scroll-target="#population_data"><span class="header-section-number">4.2.2</span> Population_data</a></li>
+  <li><a href="#reporting_completeness" id="toc-reporting_completeness" class="nav-link" data-scroll-target="#reporting_completeness"><span class="header-section-number">4.2.3</span> Reporting_completeness</a></li>
+  <li><a href="#service_data_1-and-service_data_2" id="toc-service_data_1-and-service_data_2" class="nav-link" data-scroll-target="#service_data_1-and-service_data_2"><span class="header-section-number">4.2.4</span> Service_data_1 and Service_data_2</a></li>
+  </ul></li>
+  <li><a href="#data-extraction-tools" id="toc-data-extraction-tools" class="nav-link" data-scroll-target="#data-extraction-tools"><span class="header-section-number">4.3</span> Data Extraction Tools</a>
+  <ul class="collapse">
+  <li><a href="#manual-extraction" id="toc-manual-extraction" class="nav-link" data-scroll-target="#manual-extraction"><span class="header-section-number">4.3.1</span> Manual Extraction</a></li>
+  <li><a href="#api-based-extraction" id="toc-api-based-extraction" class="nav-link" data-scroll-target="#api-based-extraction"><span class="header-section-number">4.3.2</span> API-Based Extraction</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/data-preparation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -193,9 +235,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This guide details how to prepare data into the Countdown Health Facility Data (HFD) Format.</p>
+<p>This document outlines instructions for preparing data for the <strong>Country Analysis of Vaccine Indicators at the District Level</strong>. The data focuses on vaccines and will assess health service utilization at national and sub-national levels. Teams will extract and compile data from DHIS2 using a standardized template.</p>
+<section id="general-guidelines" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="general-guidelines"><span class="header-section-number">4.1</span> General Guidelines</h2>
+<p>Follow these steps to ensure accurate and complete data preparation:</p>
+<ol type="1">
+<li><strong>Spreadsheet Structure</strong>: The template consists of the following worksheets:
+<ul>
+<li>Admin_data</li>
+<li>Population_data</li>
+<li>Reporting_completeness</li>
+<li>Service_data_1</li>
+<li>Service_data_2</li>
+</ul></li>
+<li><strong>Data Requirements</strong>: Extract monthly district-level data for at least <strong>three years</strong>.</li>
+<li><strong>Template Use</strong>: Do not alter the provided template’s structure or columns unless requested.</li>
+<li><strong>Consistency</strong>:
+<ul>
+<li>Ensure district names are uniform and listed in the same order across all worksheets.</li>
+<li>Use the most recent district classification if available; otherwise, use the division covering the longest time span.</li>
+</ul></li>
+<li><strong>Data Extraction Methods</strong>: Data can be extracted using either of the following methods:
+<ul>
+<li><strong>Manual</strong>: Export indicators from DHIS2 to a CSV file and compile them in the provided template.</li>
+<li><strong>API</strong>: Use the GFF-provided API for automated data extraction into a CSV file, then import it into the template.</li>
+</ul></li>
+</ol>
+</section>
+<section id="worksheet-instructions" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="worksheet-instructions"><span class="header-section-number">4.2</span> Worksheet Instructions</h2>
+<p>Adhere to worksheet-specific instructions to ensure accurate analysis and coverage estimates.</p>
+<section id="admin_data" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="admin_data"><span class="header-section-number">4.2.1</span> Admin_data</h3>
+<ul>
+<li>Enter administrative details (e.g., district names, codes).</li>
+<li>This worksheet serves as the master list for districts; ensure complete consistency with other worksheets.</li>
+</ul>
+</section>
+<section id="population_data" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="population_data"><span class="header-section-number">4.2.2</span> Population_data</h3>
+<ul>
+<li>Populate population estimates, including demographic breakdowns specified in the template.</li>
+</ul>
+</section>
+<section id="reporting_completeness" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="reporting_completeness"><span class="header-section-number">4.2.3</span> Reporting_completeness</h3>
+<ul>
+<li>Record health facility reporting completeness (e.g., monthly report submission rates).</li>
+</ul>
+</section>
+<section id="service_data_1-and-service_data_2" class="level3" data-number="4.2.4">
+<h3 data-number="4.2.4" class="anchored" data-anchor-id="service_data_1-and-service_data_2"><span class="header-section-number">4.2.4</span> Service_data_1 and Service_data_2</h3>
+<ul>
+<li>Include service delivery indicators such as antenatal care or immunization coverage.</li>
+<li>Ensure alignment with the template’s indicator requirements.</li>
+</ul>
+</section>
+</section>
+<section id="data-extraction-tools" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="data-extraction-tools"><span class="header-section-number">4.3</span> Data Extraction Tools</h2>
+<section id="manual-extraction" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="manual-extraction"><span class="header-section-number">4.3.1</span> Manual Extraction</h3>
+<ol type="1">
+<li>Log in to DHIS2.</li>
+<li>Export required indicators to a CSV file.</li>
+<li>Compile the data into the appropriate worksheets.</li>
+</ol>
+</section>
+<section id="api-based-extraction" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="api-based-extraction"><span class="header-section-number">4.3.2</span> API-Based Extraction</h3>
+<ol type="1">
+<li>Access the GFF API with DHIS2 credentials.</li>
+<li>Extract required indicators into a CSV file.</li>
+<li>Import the CSV data into the template.</li>
+<li>Coordinate with the Ministry of Health for API set-up if needed.</li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -288,7 +406,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/github\.com\/damurka\/cd2030\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -635,7 +753,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/data-preparation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/data-preparation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

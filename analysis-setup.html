@@ -8,7 +8,7 @@
 
 <meta name="author" content="David Kariuki">
 
-<title>6&nbsp; DHIS2 Download – cd2030 User Guide</title>
+<title>8&nbsp; Analysis Setup – cd2030 User Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./select-directory.html" rel="next">
-<link href="./upload-data.html" rel="prev">
+<link href="./documentation.html" rel="next">
+<link href="./select-directory.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-input.html">Data Input</a></li><li class="breadcrumb-item"><a href="./dhis2-download.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./analysis-setup.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Analysis Setup</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dhis2-download.html" class="sidebar-item-text sidebar-link active">
+  <a href="./dhis2-download.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></span></a>
   </div>
 </li>
@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./analysis-setup.html" class="sidebar-item-text sidebar-link">
+  <a href="./analysis-setup.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Analysis Setup</span></span></a>
   </div>
 </li>
@@ -197,20 +197,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#understanding-the-dhis2-download-process" id="toc-understanding-the-dhis2-download-process" class="nav-link active" data-scroll-target="#understanding-the-dhis2-download-process"><span class="header-section-number">6.1</span> Understanding the DHIS2 Download Process</a></li>
-  <li><a href="#connecting-to-dhis2" id="toc-connecting-to-dhis2" class="nav-link" data-scroll-target="#connecting-to-dhis2"><span class="header-section-number">6.2</span> Connecting to DHIS2</a></li>
-  <li><a href="#downloading-data" id="toc-downloading-data" class="nav-link" data-scroll-target="#downloading-data"><span class="header-section-number">6.3</span> Downloading Data</a></li>
-  <li><a href="#security-and-privacy" id="toc-security-and-privacy" class="nav-link" data-scroll-target="#security-and-privacy"><span class="header-section-number">6.4</span> Security and Privacy</a></li>
-  <li><a href="#troubleshooting-dhis2-connections-and-downloads" id="toc-troubleshooting-dhis2-connections-and-downloads" class="nav-link" data-scroll-target="#troubleshooting-dhis2-connections-and-downloads"><span class="header-section-number">6.5</span> Troubleshooting DHIS2 Connections and Downloads</a></li>
+  <li><a href="#setup-national-rates" id="toc-setup-national-rates" class="nav-link active" data-scroll-target="#setup-national-rates"><span class="header-section-number">8.1</span> Setup National Rates</a>
+  <ul class="collapse">
+  <li><a href="#fields-to-complete" id="toc-fields-to-complete" class="nav-link" data-scroll-target="#fields-to-complete"><span class="header-section-number">8.1.1</span> Fields to Complete:</a></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps"><span class="header-section-number">8.1.2</span> Steps:</a></li>
+  </ul></li>
+  <li><a href="#upload-survey-data" id="toc-upload-survey-data" class="nav-link" data-scroll-target="#upload-survey-data"><span class="header-section-number">8.2</span> Upload Survey Data</a>
+  <ul class="collapse">
+  <li><a href="#upload-un-estimates-data" id="toc-upload-un-estimates-data" class="nav-link" data-scroll-target="#upload-un-estimates-data"><span class="header-section-number">8.2.1</span> Upload UN Estimates Data</a></li>
+  <li><a href="#upload-wuenic-estimates" id="toc-upload-wuenic-estimates" class="nav-link" data-scroll-target="#upload-wuenic-estimates"><span class="header-section-number">8.2.2</span> Upload WUENIC Estimates</a></li>
+  <li><a href="#configure-survey-folder" id="toc-configure-survey-folder" class="nav-link" data-scroll-target="#configure-survey-folder"><span class="header-section-number">8.2.3</span> Configure Survey Folder</a></li>
+  <li><a href="#subnational-manual-data-mapping" id="toc-subnational-manual-data-mapping" class="nav-link" data-scroll-target="#subnational-manual-data-mapping"><span class="header-section-number">8.2.4</span> Subnational Manual Data Mapping</a></li>
+  </ul></li>
+  <li><a href="#manual-mapping-of-survey-data" id="toc-manual-mapping-of-survey-data" class="nav-link" data-scroll-target="#manual-mapping-of-survey-data"><span class="header-section-number">8.3</span> Manual Mapping of Survey Data</a>
+  <ul class="collapse">
+  <li><a href="#steps-to-map-survey-data" id="toc-steps-to-map-survey-data" class="nav-link" data-scroll-target="#steps-to-map-survey-data"><span class="header-section-number">8.3.1</span> Steps to Map Survey Data:</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes"><span class="header-section-number">8.3.2</span> Notes:</a></li>
+  <li><a href="#mandatory-for-analysis" id="toc-mandatory-for-analysis" class="nav-link" data-scroll-target="#mandatory-for-analysis"><span class="header-section-number">8.3.3</span> Mandatory for Analysis</a></li>
+  </ul></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices"><span class="header-section-number">8.4</span> Best Practices</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting"><span class="header-section-number">8.5</span> Troubleshooting</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/dhis2-download.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/analysis-setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-input.html">Data Input</a></li><li class="breadcrumb-item"><a href="./dhis2-download.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-dhis2-download" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></span></h1>
+<h1 class="title"><span id="sec-analysis-setup" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Analysis Setup</span></span></h1>
 </div>
 
 
@@ -227,93 +242,197 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This guide explains how to securely connect to DHIS2 using the cd2030 app and download relevant data.</p>
-<section id="understanding-the-dhis2-download-process" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="understanding-the-dhis2-download-process"><span class="header-section-number">6.1</span> Understanding the DHIS2 Download Process</h2>
-<p>The <code>DHIS2 Download</code> module allows you to:</p>
-<ul>
-<li>Securely connect to your DHIS2 instance.</li>
-<li>Select the desired country and data period.</li>
-<li>Download data in supported formats for use within the cd2030 app.</li>
-</ul>
-</section>
-<section id="connecting-to-dhis2" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="connecting-to-dhis2"><span class="header-section-number">6.2</span> Connecting to DHIS2</h2>
-<p>Follow these steps to establish a connection:</p>
+<p>The <strong>Analysis Set-up</strong> feature allows users to configure national rates and upload necessary survey data to facilitate analysis. This guide provides a step-by-step explanation of how to set up national rates and upload survey data using the interface. Please note that file uploads are mandatory to proceed with any analysis beyond the set-up phase.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ds-analysis-setup" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The analysis setup page. ">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ds-analysis-setup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/analysis-setup.jpg" class="img-fluid figure-img" alt="The analysis setup page. ">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ds-analysis-setup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: The analysis setup page.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="setup-national-rates" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="setup-national-rates"><span class="header-section-number">8.1</span> Setup National Rates</h2>
+<p>The <strong>Set-up National Rates</strong> section enables you to input key national-level indicators. Follow these steps to configure them:</p>
+<section id="fields-to-complete" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="fields-to-complete"><span class="header-section-number">8.1.1</span> Fields to Complete:</h3>
 <ol type="1">
-<li><strong>Enter Your Credentials:</strong> Provide your DHIS2 <strong>username</strong> and <strong>password</strong> in the respective fields.</li>
-<li><strong>Select a Country:</strong> Choose the relevant country from the drop-down menu. This selection is crucial as it determines the DHIS2 instance the app will connect to.</li>
-<li><strong>Set the Period:</strong> Define the date range for the data you wish to download using the <code>Period</code> selection tools. This allows you to specify the start and end dates for your data.</li>
-<li><strong>Click Login:</strong> Press the <code>Login</code> button to initiate the connection process. The app will attempt to authenticate your credentials with the specified DHIS2 server and download the relevant data.</li>
+<li><strong>Neonatal Mortality Rate</strong>:
+<ul>
+<li>Enter the neonatal mortality rate (e.g., <code>0.025</code>).</li>
+</ul></li>
+<li><strong>Post Neonatal Mortality Rate</strong>:
+<ul>
+<li>Specify the post-neonatal mortality rate (e.g., <code>0.024</code>).</li>
+</ul></li>
+<li><strong>Twin Rate</strong>:
+<ul>
+<li>Input the rate of twin births (e.g., <code>0.015</code>).</li>
+</ul></li>
+<li><strong>Pregnancy Loss</strong>:
+<ul>
+<li>Provide the rate of pregnancy loss (e.g., <code>0.03</code>).</li>
+</ul></li>
+<li><strong>Still Birth Rate</strong>:
+<ul>
+<li>Enter the stillbirth rate (e.g., <code>0.02</code>).</li>
+</ul></li>
+<li><strong>ANC1 to Penta1 Mortality Rate</strong>:
+<ul>
+<li>Include the ANC1 to Penta1 mortality rate (e.g., <code>0.025</code>).</li>
+</ul></li>
+<li><strong>ANC1 Survey</strong>:
+<ul>
+<li>Input the ANC1 survey coverage percentage (e.g., <code>98</code>).</li>
+</ul></li>
+<li><strong>Penta1 Survey</strong>:
+<ul>
+<li>Provide the Penta1 survey coverage percentage (e.g., <code>97</code>).</li>
+</ul></li>
 </ol>
 </section>
-<section id="downloading-data" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="downloading-data"><span class="header-section-number">6.3</span> Downloading Data</h2>
-<p>Once a successful data download choose between the available download formats: - <strong>Download Master File:</strong> Downloads the data as a <code>.dta</code> (Stata) file. - <strong>Download Excel File:</strong> Downloads the data as a <code>.xlsx</code> (Excel) file.</p>
-</section>
-<section id="security-and-privacy" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="security-and-privacy"><span class="header-section-number">6.4</span> Security and Privacy</h2>
-<p>The cd2030 app prioritizes the security and privacy of your DHIS2 credentials:</p>
+<section id="steps" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="steps"><span class="header-section-number">8.1.2</span> Steps:</h3>
 <ul>
-<li><strong>Temporary Credentials:</strong> Your DHIS2 username and password are used only temporarily during the current session.</li>
-<li><strong>No Storage of Credentials:</strong> The app does <em>not</em> store your credentials persistently. Once the session ends or you close the app, all credential information is discarded.</li>
-<li><strong>Secure Connection:</strong> The app uses secure communication protocols (HTTPS) to connect to DHIS2 servers, protecting your data during transmission.</li>
-<li><strong>Open-Source Code:</strong> The app’s open-source nature allows for independent review of its code, ensuring transparency in how credentials and data are handled.</li>
+<li>Enter the appropriate values for each field.</li>
+<li>Ensure accuracy as these rates are crucial for subsequent analyses.</li>
 </ul>
 </section>
-<section id="troubleshooting-dhis2-connections-and-downloads" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="troubleshooting-dhis2-connections-and-downloads"><span class="header-section-number">6.5</span> Troubleshooting DHIS2 Connections and Downloads</h2>
-<p>The following table lists common errors and their solutions:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 46%">
-<col style="width: 32%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Error Message</th>
-<th style="text-align: left;">Cause</th>
-<th style="text-align: left;">Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">“Error: Country must be selected”</td>
-<td style="text-align: left;">No country was selected from the drop-down menu.</td>
-<td style="text-align: left;">Select the appropriate country from the drop-down list.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">“Error: Username must be provided”</td>
-<td style="text-align: left;">The username field is empty.</td>
-<td style="text-align: left;">Enter your DHIS2 username in the designated field.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">“Error: Password must be provided”</td>
-<td style="text-align: left;">The password field is empty.</td>
-<td style="text-align: left;">Enter your DHIS2 password in the designated field.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">“Download Error: Failed to retrieve user profile.”</td>
-<td style="text-align: left;">There is an issue with the DHIS2 server, a network connectivity problem, incorrect credentials, or the selected country’s configuration within the app.</td>
-<td style="text-align: left;"><ul>
-<li><p>Verify your internet connection.</p></li>
-<li><p>Double-check your DHIS2 username and password for typos.</p></li>
-<li><p>Ensure the DHIS2 server is operational by accessing it through a web browser.</p></li>
-<li><p>Confirm that you have access to the selected country’s DHIS2 instance.</p></li>
-<li><p>If the problem persists, contact your DHIS2 administrator or the app’s support team.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">“Download Error: Could not retrieve data for the specified period.”</td>
-<td style="text-align: left;">No data exists on the DHIS2 server for the selected country and period, or the user lacks the necessary permissions.</td>
-<td style="text-align: left;"><ul>
-<li>Verify that data exists in DHIS2 for the chosen country and time period by checking DHIS2 directly.</li>
-<li>Ensure your DHIS2 user account has the required permissions to access the data.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="upload-survey-data" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="upload-survey-data"><span class="header-section-number">8.2</span> Upload Survey Data</h2>
+<p>The <strong>Upload Survey Data</strong> section allows you to upload necessary datasets for analysis. It supports files in <code>.dta</code> format. Follow the instructions below:</p>
+<section id="upload-un-estimates-data" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="upload-un-estimates-data"><span class="header-section-number">8.2.1</span> Upload UN Estimates Data</h3>
+<ul>
+<li>Click on <strong>“Browse or Drop…”</strong> under the <strong>Upload UN Estimates data</strong> section.</li>
+<li>Select the file containing UN estimates data in <code>.dta</code> format.</li>
+<li>Wait for the upload confirmation message.</li>
+</ul>
+</section>
+<section id="upload-wuenic-estimates" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="upload-wuenic-estimates"><span class="header-section-number">8.2.2</span> Upload WUENIC Estimates</h3>
+<ul>
+<li>Similarly, click on <strong>“Browse or Drop…”</strong> under the <strong>Upload WUENIC estimates</strong> section.</li>
+<li>Choose the file with WUENIC data in <code>.dta</code> format.</li>
+<li>Confirm the upload completion.</li>
+</ul>
+</section>
+<section id="configure-survey-folder" class="level3" data-number="8.2.3">
+<h3 data-number="8.2.3" class="anchored" data-anchor-id="configure-survey-folder"><span class="header-section-number">8.2.3</span> Configure Survey Folder</h3>
+<ul>
+<li>Click <strong>“Browse or Select…”</strong> under the <strong>Survey Folder</strong> section.</li>
+<li>Navigate to the folder containing your survey files (refer to the <a href="select-directory.html">Select Directory</a>).</li>
+<li>Select the folder and verify the folder path.</li>
+</ul>
+</section>
+<section id="subnational-manual-data-mapping" class="level3" data-number="8.2.4">
+<h3 data-number="8.2.4" class="anchored" data-anchor-id="subnational-manual-data-mapping"><span class="header-section-number">8.2.4</span> Subnational Manual Data Mapping</h3>
+<ul>
+<li>Use the <strong>Map Survey Data</strong> button to map subnational survey data.</li>
+<li>Use the <strong>Map Mapping Data</strong> button to map shapefile data</li>
+</ul>
+</section>
+</section>
+<section id="manual-mapping-of-survey-data" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="manual-mapping-of-survey-data"><span class="header-section-number">8.3</span> Manual Mapping of Survey Data</h2>
+<p>The <strong>Manual Mapping of Survey Data</strong> feature enables users to align survey data with subnational regions accurately. This is crucial for ensuring consistency across administrative regions.</p>
+<section id="steps-to-map-survey-data" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="steps-to-map-survey-data"><span class="header-section-number">8.3.1</span> Steps to Map Survey Data:</h3>
+<ol type="1">
+<li><strong>Open the Manual Mapping Window</strong>:
+<ul>
+<li>Click on the <strong>“Map Survey Data”</strong> button in the <strong>Subnational Manual Data Mapping</strong> section.</li>
+</ul></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ds-map-survey" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The Manual mapping of subantional survey data dialog. ">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ds-map-survey-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/map-survey.jpg" class="img-fluid figure-img" alt="The Manual mapping of subantional survey data dialog. ">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ds-map-survey-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: The Manual mapping of subantional survey data dialog.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li><strong>Review the Regions</strong>:
+<ul>
+<li>The mapping window will display a list of survey regions (e.g., “DRS Dakar”, “DRS Diourbel”).</li>
+<li>Each region corresponds to a dropdown menu for mapping.</li>
+</ul></li>
+<li><strong>Select Corresponding Regions</strong>:
+<ul>
+<li>For each region in the left column, select the appropriate mapped region from the dropdown menu on the right.</li>
+<li>Ensure all regions are mapped correctly to avoid discrepancies.</li>
+</ul></li>
+<li><strong>Save the Mapping</strong>:
+<ul>
+<li>After completing the mapping for all regions, click the <strong>Save Mapping</strong> button to confirm your selections.</li>
+<li>Ensure a confirmation message appears (e.g., “Mapping saved successfully”).</li>
+</ul></li>
+<li><strong>Verify the Mapping</strong>:
+<ul>
+<li>Reopen the mapping window if needed to verify that all regions are mapped correctly.</li>
+</ul></li>
+</ol>
+</section>
+<section id="notes" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="notes"><span class="header-section-number">8.3.2</span> Notes:</h3>
+<ul>
+<li>Manual mapping is optional. If the survey regions already align with the required subnational structure, mapping can be skipped entirely.</li>
+<li>However, if mapping is required, it must be completed fully. Partial mapping is not allowed.</li>
+<li>Double-check each selection to ensure accuracy.</li>
+</ul>
+</section>
+<section id="mandatory-for-analysis" class="level3" data-number="8.3.3">
+<h3 data-number="8.3.3" class="anchored" data-anchor-id="mandatory-for-analysis"><span class="header-section-number">8.3.3</span> Mandatory for Analysis</h3>
+<p>Uploading all required files is essential. Without these files, you will not be able to proceed with:</p>
+<ul>
+<li><strong>Denominator Assessment</strong></li>
+<li><strong>National Analysis</strong></li>
+<li><strong>Subnational Analysis</strong></li>
+</ul>
+<p>Ensure all files are uploaded before initiating these steps.</p>
+</section>
+</section>
+<section id="best-practices" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="best-practices"><span class="header-section-number">8.4</span> Best Practices</h2>
+<ol type="1">
+<li><p><strong>Ensure Data Formats</strong>: Upload files in <code>.dta</code> format only, as other formats are not supported.</p></li>
+<li><p><strong>Organize Data</strong>: Maintain a structured folder with properly named files to avoid confusion during uploads.</p></li>
+<li><p><strong>Validate Inputs</strong>: Double-check all input values and uploaded files for accuracy.</p></li>
+<li><p><strong>Monitor Upload Status</strong>: Verify that all uploads show a success message before proceeding.</p></li>
+</ol>
+</section>
+<section id="troubleshooting" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">8.5</span> Troubleshooting</h2>
+<ol type="1">
+<li><strong>File Upload Issues</strong>:
+<ul>
+<li>Ensure the file is in <code>.dta</code> format.</li>
+<li>Confirm that the file path is accessible.</li>
+</ul></li>
+<li><strong>Incorrect Rates</strong>:
+<ul>
+<li>If you entered incorrect rates, re-enter the values and save them.</li>
+</ul></li>
+<li><strong>Survey Folder Not Set</strong>:
+<ul>
+<li>Ensure the folder exists and has proper permissions.</li>
+<li>Retry selecting the folder if the issue persists.</li>
+</ul></li>
+</ol>
 
 
 </section>
@@ -738,13 +857,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./upload-data.html" class="pagination-link" aria-label="Upload Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Upload Data</span></span>
+      <a href="./select-directory.html" class="pagination-link" aria-label="Select Directory">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Select Directory</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./select-directory.html" class="pagination-link" aria-label="Select Directory">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Select Directory</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./documentation.html" class="pagination-link" aria-label="Documentation">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Documentation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -756,7 +875,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/dhis2-download.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/analysis-setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

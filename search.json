@@ -154,7 +154,7 @@
     "href": "data-input.html",
     "title": "Data Input",
     "section": "",
-    "text": "Uploading Data\nThis page provides an introduction to two key functionalities of the app: Data Upload and DHIS2 Data Download. These tools enable efficient integration and preparation of the countdown data for analysis.\nEasily upload dataset formatted according to the Countdown Health Facility Data Format. This modules includes",
+    "text": "Uploading Data\nThis page provides an introduction to two key functionalities of the app: Data Upload and DHIS2 Data Download. These tools enable efficient integration and preparation of the countdown data for analysis.\nEasily upload the dataset formatted according to the Countdown Health Facility Data Format. This module includes",
     "crumbs": [
       "Data Input"
     ]
@@ -164,7 +164,7 @@
     "href": "data-input.html#uploading-data",
     "title": "Data Input",
     "section": "",
-    "text": "File Validation: Ensures your dataset complies with required standards.\nSupported formats: Accepts .xls, .xlsx, .dta and .rds files\nError Handling: Provides detailed feedback for resolving upload issues.",
+    "text": "File Validation: Ensures your dataset complies with the required standards.\nSupported formats: Accepts .xls, .xlsx, .dta and .rds files\nError Handling: Provides detailed feedback for resolving upload issues.",
     "crumbs": [
       "Data Input"
     ]
@@ -174,17 +174,7 @@
     "href": "data-input.html#dhis2-data-download",
     "title": "Data Input",
     "section": "DHIS2 Data Download",
-    "text": "DHIS2 Data Download\nSecurely connect to DHIS2 servers to fetch health data for analysis. Key features include:\n\nCustomizable Period: Select a specific date range for the data.\nCountry Selection: Fetch data tailored to the selected country’s settings.\nSecure Authentication: Your credentials are used securely and discarded after the session.",
-    "crumbs": [
-      "Data Input"
-    ]
-  },
-  {
-    "objectID": "data-input.html#why-use-these-tool",
-    "href": "data-input.html#why-use-these-tool",
-    "title": "Data Input",
-    "section": "Why Use These Tool?",
-    "text": "Why Use These Tool?\n\nQuickly integrate data into the app with minimal friction.\nBuilt-in validation ensues datasets meet analytical requirements.\nDownload data from DHIS2 with confidence in secure session-based authentication.\n\nBy following these guides, you can set up your data efficiently and ensure it is ready for detailed analysis in the app. Choose the appropriate section to get started:\n\n5  Upload Data\n6  DHIS2 Download",
+    "text": "DHIS2 Data Download\nSecurely connect to DHIS2 servers to fetch health data for analysis. Key features include:\n\nCustomizable Period: Select a specific date range for the data.\nCountry Selection: Fetch data tailored to the selected country’s settings.\nSecure Authentication: Your credentials are used securely and discarded after the session.\n\nBy following these guides, you can set up your data efficiently and ensure it is ready for detailed analysis in the app. Choose the appropriate section to get started:\n\n4  Data Preparation\n5  Upload Data\n6  DHIS2 Download",
     "crumbs": [
       "Data Input"
     ]
@@ -194,7 +184,40 @@
     "href": "data-preparation.html",
     "title": "4  Data Preparation",
     "section": "",
-    "text": "This guide details how to prepare data into the Countdown Health Facility Data (HFD) Format.",
+    "text": "4.1 General Guidelines\nThis document outlines instructions for preparing data for the Country Analysis of Vaccine Indicators at the District Level. The data focuses on vaccines and will assess health service utilization at national and sub-national levels. Teams will extract and compile data from DHIS2 using a standardized template.\nFollow these steps to ensure accurate and complete data preparation:",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "data-preparation.html#general-guidelines",
+    "href": "data-preparation.html#general-guidelines",
+    "title": "4  Data Preparation",
+    "section": "",
+    "text": "Spreadsheet Structure: The template consists of the following worksheets:\n\nAdmin_data\nPopulation_data\nReporting_completeness\nService_data_1\nService_data_2\n\nData Requirements: Extract monthly district-level data for at least three years.\nTemplate Use: Do not alter the provided template’s structure or columns unless requested.\nConsistency:\n\nEnsure district names are uniform and listed in the same order across all worksheets.\nUse the most recent district classification if available; otherwise, use the division covering the longest time span.\n\nData Extraction Methods: Data can be extracted using either of the following methods:\n\nManual: Export indicators from DHIS2 to a CSV file and compile them in the provided template.\nAPI: Use the GFF-provided API for automated data extraction into a CSV file, then import it into the template.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "data-preparation.html#worksheet-instructions",
+    "href": "data-preparation.html#worksheet-instructions",
+    "title": "4  Data Preparation",
+    "section": "4.2 Worksheet Instructions",
+    "text": "4.2 Worksheet Instructions\nAdhere to worksheet-specific instructions to ensure accurate analysis and coverage estimates.\n\n4.2.1 Admin_data\n\nEnter administrative details (e.g., district names, codes).\nThis worksheet serves as the master list for districts; ensure complete consistency with other worksheets.\n\n\n\n4.2.2 Population_data\n\nPopulate population estimates, including demographic breakdowns specified in the template.\n\n\n\n4.2.3 Reporting_completeness\n\nRecord health facility reporting completeness (e.g., monthly report submission rates).\n\n\n\n4.2.4 Service_data_1 and Service_data_2\n\nInclude service delivery indicators such as antenatal care or immunization coverage.\nEnsure alignment with the template’s indicator requirements.",
+    "crumbs": [
+      "Data Input",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Preparation</span>"
+    ]
+  },
+  {
+    "objectID": "data-preparation.html#data-extraction-tools",
+    "href": "data-preparation.html#data-extraction-tools",
+    "title": "4  Data Preparation",
+    "section": "4.3 Data Extraction Tools",
+    "text": "4.3 Data Extraction Tools\n\n4.3.1 Manual Extraction\n\nLog in to DHIS2.\nExport required indicators to a CSV file.\nCompile the data into the appropriate worksheets.\n\n\n\n4.3.2 API-Based Extraction\n\nAccess the GFF API with DHIS2 credentials.\nExtract required indicators into a CSV file.\nImport the CSV data into the template.\nCoordinate with the Ministry of Health for API set-up if needed.",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Preparation</span>"
@@ -205,7 +228,7 @@
     "href": "upload-data.html",
     "title": "5  Upload Data",
     "section": "",
-    "text": "5.1 1. Understanding the Upload Process\nThis guide details how to upload data into the cd2030 app, ensuring compatibility with the Countdown Health Facility Data (HFD) Format.\nThe Upload Data module allows you to:",
+    "text": "5.1 Understanding the Upload Process\nThis guide details how to upload data into the cd2030 app, ensuring compatibility with the Countdown Health Facility Data (HFD) Format.\nThe Upload Data module allows you to:",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
@@ -226,8 +249,8 @@
     "objectID": "upload-data.html#supported-file-formats",
     "href": "upload-data.html#supported-file-formats",
     "title": "5  Upload Data",
-    "section": "5.2 2. Supported File Formats",
-    "text": "5.2 2. Supported File Formats\nThe app supports the following file types:\n\nExcel Files (.xls, .xlsx): Primarily for raw or minimally processed data.\nStata Files (.dta): Recommended for processed and formatted data adhering to the HFD standard.\nR Data Files (.rds): For pre-processed data, settings, or cached data.",
+    "section": "5.2 Supported File Formats",
+    "text": "5.2 Supported File Formats\nThe app supports the following file types:\n\nExcel Files (.xls, .xlsx): Primarily for raw or minimally processed data.\nStata Files (.dta): Processed and formatted data adhering to the HFD standard.\nR Data Files (.rds): For pre-processed data, settings, or cached data.",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
@@ -237,8 +260,8 @@
     "objectID": "upload-data.html#uploading-your-file",
     "href": "upload-data.html#uploading-your-file",
     "title": "5  Upload Data",
-    "section": "5.3 3. Uploading Your File",
-    "text": "5.3 3. Uploading Your File\nOnce your data is prepared:\n\nNavigate to the Load Data section in the app’s sidebar.\nDrag and Drop: Drag your file into the designated upload area.\nBrowse: Alternatively, click Browse to select the file from your computer.\n\nThe app will automatically validate the uploaded file.\n\nSuccessful Upload: A confirmation message will appear: “Upload successful: Your file is ready for analysis.”\nUpload Errors: If errors are detected, an error message will be displayed. See the “Troubleshooting Uploads” section below.",
+    "section": "5.3 Uploading Your File",
+    "text": "5.3 Uploading Your File\nOnce your data is prepared:\n\nNavigate to the Load Data section in the app’s sidebar.\nDrag and Drop: Drag your file into the designated upload area.\nBrowse: Alternatively, click Browse to select the file from your computer.\n\nThe app will automatically validate the uploaded file.\n\nSuccessful Upload: A confirmation message will appear: “Upload successful: Your file is ready for analysis.”\nUpload Errors: If errors are detected, an error message will be displayed. See the “Troubleshooting Uploads” section below.",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
@@ -248,8 +271,8 @@
     "objectID": "upload-data.html#troubleshooting-uploads",
     "href": "upload-data.html#troubleshooting-uploads",
     "title": "5  Upload Data",
-    "section": "5.4 4. Troubleshooting Uploads",
-    "text": "5.4 4. Troubleshooting Uploads\nThe following table lists common upload errors and their solutions:\n\n\n\n\n\n\n\n\nError Message\nCause\nSolution\n\n\n\n\n“Unsupported file format”\nFile type not supported.\nSave your file as .xls, .xlsx, .dta, or .rds. .dta is the recommended format.\n\n\n“The following required columns are missing from the data: [column names]”\nMissing essential columns in the data.\nAdd the missing column(s) to your dataset and ensure their values are valid. Refer to the HFD Guidelines for required columns.\n\n\n“The following sheets are missing: [sheet names]” (Primarily for Excel files)\nMissing one or more required sheets in the Excel file.\nEnsure all required sheets are present and conform to the template. If working with .dta or .rds files, this error should not occur.\n\n\n“Sheet [Sheet Name] is empty” (Primarily for Excel files)\nThe sheet exists but contains no data.\nPopulate the sheet with valid data or remove the empty sheet. If working with .dta or .rds files, this error should not occur.\n\n\n“Key Columns ‘[column names]’ missing in [Sheet Name]” (Primarily for Excel files)\nA key column (district, year, or month) is missing from the specified sheet.\nAdd the missing column(s) to the sheet and ensure the data is structured correctly. If working with .dta or .rds files, this error should not occur.\n\n\n“Column name ‘[column name]’ must not be duplicated. Use .name_repair to specify repair.”\nDuplicate column names in the dataset.\nEnsure all column names are unique. Rename or remove duplicate columns.\n\n\n“Non-numeric values found in numeric column ‘[column name]’. These values have been coerced to NA.”\nA numeric column contains non-numeric data.\nCheck the specified column for non-numeric values (e.g., text, special characters). Correct these values or convert them to missing values (NA) before uploading.",
+    "section": "5.4 Troubleshooting Uploads",
+    "text": "5.4 Troubleshooting Uploads\nThe following table lists common upload errors and their solutions:\n\n\n\n\n\n\n\n\nError Message\nCause\nSolution\n\n\n\n\n“Unsupported file format”\nFile type not supported.\nSave your file as .xls, .xlsx, .dta, or .rds. .dta is the recommended format.\n\n\n“The following required columns are missing from the data: [column names]”\nMissing essential columns in the data.\nAdd the missing column(s) to your dataset and ensure their values are valid. Refer to the HFD Guidelines for required columns.\n\n\n“The following sheets are missing: [sheet names]” (Primarily for Excel files)\nMissing one or more required sheets in the Excel file.\nEnsure all required sheets are present and conform to the template. If working with .dta or .rds files, this error should not occur.\n\n\n“Sheet [Sheet Name] is empty” (Primarily for Excel files)\nThe sheet exists but contains no data.\nPopulate the sheet with valid data or remove the empty sheet. If working with .dta or .rds files, this error should not occur.\n\n\n“Key Columns ‘[column names]’ missing in [Sheet Name]” (Primarily for Excel files)\nA key column (district, year, or month) is missing from the specified sheet.\nAdd the missing column(s) to the sheet and ensure the data is structured correctly. If working with .dta or .rds files, this error should not occur.\n\n\n“Column name ‘[column name]’ must not be duplicated. Use .name_repair to specify repair.”\nDuplicate column names in the dataset.\nEnsure all column names are unique. Rename or remove duplicate columns.\n\n\n“Non-numeric values found in numeric column ‘[column name]’. These values have been coerced to NA.”\nA numeric column contains non-numeric data.\nCheck the specified column for non-numeric values (e.g., text, special characters). Correct these values or convert them to missing values (NA) before uploading.",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
@@ -259,8 +282,8 @@
     "objectID": "upload-data.html#data-validation-within-the-app",
     "href": "upload-data.html#data-validation-within-the-app",
     "title": "5  Upload Data",
-    "section": "5.5 5. Data Validation within the App",
-    "text": "5.5 5. Data Validation within the App\nThe app performs the following validation checks during the upload process:\n\nFile Format Check: Confirms the file is in a supported format.\nSheet Presence Check (Excel only): Verifies that all required sheets are present.\nColumn Presence and Uniqueness Check: Ensures all required columns are present and unique.\nData Availability Check: Checks that required sheets/data are not empty and key columns are populated.\nData Type Validation: Checks that numeric columns contain valid numeric values. Non-numeric values will be coerced to NA.",
+    "section": "5.5 Data Validation within the App",
+    "text": "5.5 Data Validation within the App\nThe app performs the following validation checks during the upload process:\n\nFile Format Check: Confirms the file is in a supported format.\nSheet Presence Check (Excel only): Verifies that all required sheets are present.\nColumn Presence and Uniqueness Check: Ensures all required columns are present and unique.\nData Availability Check: Checks that required sheets/data are not empty and key columns are populated.\nData Type Validation: Checks that numeric columns contain valid numeric values. Non-numeric values will be coerced to NA.",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
@@ -270,8 +293,8 @@
     "objectID": "upload-data.html#how-errors-are-handled",
     "href": "upload-data.html#how-errors-are-handled",
     "title": "5  Upload Data",
-    "section": "5.6 6. How Errors Are Handled",
-    "text": "5.6 6. How Errors Are Handled\n\nIf validation fails, the upload process stops, and an informative error message is displayed.\nConsult the “Troubleshooting Uploads” section for solutions to common errors.",
+    "section": "5.6 How Errors Are Handled",
+    "text": "5.6 How Errors Are Handled\n\nIf validation fails, the upload process stops, and an informative error message is displayed.\nConsult the “Troubleshooting Uploads” section for solutions to common errors.",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Upload Data</span>"
@@ -282,7 +305,7 @@
     "href": "dhis2-download.html",
     "title": "6  DHIS2 Download",
     "section": "",
-    "text": "6.1 1. Understanding the DHIS2 Download Process\nThis guide explains how to securely connect to DHIS2 using the cd2030 app and download relevant data.\nThe DHIS2 Download module allows you to:",
+    "text": "6.1 Understanding the DHIS2 Download Process\nThis guide explains how to securely connect to DHIS2 using the cd2030 app and download relevant data.\nThe DHIS2 Download module allows you to:",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
@@ -303,8 +326,8 @@
     "objectID": "dhis2-download.html#connecting-to-dhis2",
     "href": "dhis2-download.html#connecting-to-dhis2",
     "title": "6  DHIS2 Download",
-    "section": "6.2 2. Connecting to DHIS2",
-    "text": "6.2 2. Connecting to DHIS2\nFollow these steps to establish a connection:\n\nEnter Your Credentials: Provide your DHIS2 username and password in the respective fields.\nSelect a Country: Choose the relevant country from the drop-down menu. This selection is crucial as it determines the DHIS2 instance the app will connect to.\nSet the Period: Define the date range for the data you wish to download using the Period selection tools. This allows you to specify the start and end dates for your data.\nClick Login: Press the Login button to initiate the connection process. The app will attempt to authenticate your credentials with the specified DHIS2 server and download the relevant data.",
+    "section": "6.2 Connecting to DHIS2",
+    "text": "6.2 Connecting to DHIS2\nFollow these steps to establish a connection:\n\nEnter Your Credentials: Provide your DHIS2 username and password in the respective fields.\nSelect a Country: Choose the relevant country from the drop-down menu. This selection is crucial as it determines the DHIS2 instance the app will connect to.\nSet the Period: Define the date range for the data you wish to download using the Period selection tools. This allows you to specify the start and end dates for your data.\nClick Login: Press the Login button to initiate the connection process. The app will attempt to authenticate your credentials with the specified DHIS2 server and download the relevant data.",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
@@ -314,8 +337,8 @@
     "objectID": "dhis2-download.html#downloading-data",
     "href": "dhis2-download.html#downloading-data",
     "title": "6  DHIS2 Download",
-    "section": "6.3 3. Downloading Data",
-    "text": "6.3 3. Downloading Data\nOnce a successful data download:\n\nSelect Download Format: Choose between the available download formats:\n\nDownload Master File: Downloads the data as a .dta (Stata) file.\nDownload Excel File: Downloads the data as a .xlsx (Excel) file.",
+    "section": "6.3 Downloading Data",
+    "text": "6.3 Downloading Data\nOnce a successful data download choose between the available download formats: - Download Master File: Downloads the data as a .dta (Stata) file. - Download Excel File: Downloads the data as a .xlsx (Excel) file.",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
@@ -325,8 +348,8 @@
     "objectID": "dhis2-download.html#security-and-privacy",
     "href": "dhis2-download.html#security-and-privacy",
     "title": "6  DHIS2 Download",
-    "section": "6.4 4. Security and Privacy",
-    "text": "6.4 4. Security and Privacy\nThe cd2030 app prioritizes the security and privacy of your DHIS2 credentials:\n\nTemporary Credentials: Your DHIS2 username and password are used only temporarily during the current session.\nNo Storage of Credentials: The app does not store your credentials persistently. Once the session ends or you close the app, all credential information is discarded.\nSecure Connection: The app uses secure communication protocols (HTTPS) to connect to DHIS2 servers, protecting your data during transmission.\nOpen-Source Code: The app’s open-source nature allows for independent review of its code, ensuring transparency in how credentials and data are handled.",
+    "section": "6.4 Security and Privacy",
+    "text": "6.4 Security and Privacy\nThe cd2030 app prioritizes the security and privacy of your DHIS2 credentials:\n\nTemporary Credentials: Your DHIS2 username and password are used only temporarily during the current session.\nNo Storage of Credentials: The app does not store your credentials persistently. Once the session ends or you close the app, all credential information is discarded.\nSecure Connection: The app uses secure communication protocols (HTTPS) to connect to DHIS2 servers, protecting your data during transmission.\nOpen-Source Code: The app’s open-source nature allows for independent review of its code, ensuring transparency in how credentials and data are handled.",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
@@ -336,11 +359,191 @@
     "objectID": "dhis2-download.html#troubleshooting-dhis2-connections-and-downloads",
     "href": "dhis2-download.html#troubleshooting-dhis2-connections-and-downloads",
     "title": "6  DHIS2 Download",
-    "section": "6.5 5. Troubleshooting DHIS2 Connections and Downloads",
-    "text": "6.5 5. Troubleshooting DHIS2 Connections and Downloads\nThe following table lists common errors and their solutions:\n\n\n\n\n\n\n\n\nError Message\nCause\nSolution\n\n\n\n\n“Error: Country must be selected”\nNo country was selected from the drop-down menu.\nSelect the appropriate country from the drop-down list.\n\n\n“Error: Username must be provided”\nThe username field is empty.\nEnter your DHIS2 username in the designated field.\n\n\n“Error: Password must be provided”\nThe password field is empty.\nEnter your DHIS2 password in the designated field.\n\n\n“Download Error: Failed to retrieve user profile.”\nThere is an issue with the DHIS2 server, a network connectivity problem, incorrect credentials, or the selected country’s configuration within the app.\n\nVerify your internet connection.\nDouble-check your DHIS2 username and password for typos.\nEnsure the DHIS2 server is operational by accessing it through a web browser.\nConfirm that you have access to the selected country’s DHIS2 instance.\nIf the problem persists, contact your DHIS2 administrator or the app’s support team.\n\n\n\n“Download Error: Could not retrieve data for the specified period.”\nNo data exists on the DHIS2 server for the selected country and period, or the user lacks the necessary permissions.\n\nVerify that data exists in DHIS2 for the chosen country and time period by checking DHIS2 directly.\nEnsure your DHIS2 user account has the required permissions to access the data.",
+    "section": "6.5 Troubleshooting DHIS2 Connections and Downloads",
+    "text": "6.5 Troubleshooting DHIS2 Connections and Downloads\nThe following table lists common errors and their solutions:\n\n\n\n\n\n\n\n\nError Message\nCause\nSolution\n\n\n\n\n“Error: Country must be selected”\nNo country was selected from the drop-down menu.\nSelect the appropriate country from the drop-down list.\n\n\n“Error: Username must be provided”\nThe username field is empty.\nEnter your DHIS2 username in the designated field.\n\n\n“Error: Password must be provided”\nThe password field is empty.\nEnter your DHIS2 password in the designated field.\n\n\n“Download Error: Failed to retrieve user profile.”\nThere is an issue with the DHIS2 server, a network connectivity problem, incorrect credentials, or the selected country’s configuration within the app.\n\nVerify your internet connection.\nDouble-check your DHIS2 username and password for typos.\nEnsure the DHIS2 server is operational by accessing it through a web browser.\nConfirm that you have access to the selected country’s DHIS2 instance.\nIf the problem persists, contact your DHIS2 administrator or the app’s support team.\n\n\n\n“Download Error: Could not retrieve data for the specified period.”\nNo data exists on the DHIS2 server for the selected country and period, or the user lacks the necessary permissions.\n\nVerify that data exists in DHIS2 for the chosen country and time period by checking DHIS2 directly.\nEnsure your DHIS2 user account has the required permissions to access the data.",
     "crumbs": [
       "Data Input",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>DHIS2 Download</span>"
+    ]
+  },
+  {
+    "objectID": "select-directory.html",
+    "href": "select-directory.html",
+    "title": "7  Select Directory",
+    "section": "",
+    "text": "7.1 Steps to Use the Select Directory Feature\nThe Select Directory feature allows users to choose a folder on their computer for specific purposes, such as setting a cache directory or uploading survey data. This guide explains how to use the directory selector efficiently.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Select Directory</span>"
+    ]
+  },
+  {
+    "objectID": "select-directory.html#steps-to-use-the-select-directory-feature",
+    "href": "select-directory.html#steps-to-use-the-select-directory-feature",
+    "title": "7  Select Directory",
+    "section": "",
+    "text": "7.1.1 Open the Directory Selector\n\nClick the button labelled “Set Cache Directory” or any other action that opens the directory selector.\nA window will appear, allowing you to browse your computer’s file system.\n\n\n\n\n\n\n\n\n\nFigure 7.1: The select directory dialog.\n\n\n\n\n\n\n\n7.1.2 Select a Drive (if needed)\n\nUse the top-right drop-down menu labelled with the current drive (e.g., C:) to select a different drive.\nClick the drop-down arrow and choose the drive where the desired folder is located.\n\n\n\n7.1.3 Navigate Through the File System\n\nUse the left-hand panel to browse available folders.\nExpand a folder by clicking the small triangle next to its name.\nScroll as needed to view more directories.\n\n\n\n7.1.4 Sort Content (Optional)\n\nUse the “Sort Content” button to organize the folders alphabetically or by other criteria, if available.\n\n\n\n7.1.5 Select a Folder\n\nClick on the desired folder to highlight it.\nClick the “Select” button at the bottom-right corner of the window to confirm your choice.\n\n\n\n7.1.6 Verify Your Selection\n\nOnce the folder is selected, the application will confirm the operation with a message (e.g., “Cache directory set successfully”).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Select Directory</span>"
+    ]
+  },
+  {
+    "objectID": "select-directory.html#best-practices",
+    "href": "select-directory.html#best-practices",
+    "title": "7  Select Directory",
+    "section": "7.2 Best Practices",
+    "text": "7.2 Best Practices\n\nEnsure Folder Permissions:\n\nMake sure the folder has the appropriate read/write permissions for the application to access or save files.\n\nUse a Dedicated Folder:\n\nCreate and use a specific folder (e.g., “Cache” or “App Data”) to keep files organized and prevent mixing unrelated data.\n\nAvoid System Folders:\n\nRefrain from selecting critical system directories (e.g., C:/Windows) to avoid accidental changes to sensitive files.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Select Directory</span>"
+    ]
+  },
+  {
+    "objectID": "select-directory.html#common-use-cases",
+    "href": "select-directory.html#common-use-cases",
+    "title": "7  Select Directory",
+    "section": "7.3 Common Use Cases",
+    "text": "7.3 Common Use Cases\n\n7.3.1 Setting a Cache Directory\n\nStore temporary files generated by the application to enhance performance by reusing cached data.\n\n\n\n7.3.2 Uploading Survey Files\n\nChoose a folder containing country-specific survey files (e.g., .dta) for importing data into the application.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Select Directory</span>"
+    ]
+  },
+  {
+    "objectID": "analysis-setup.html",
+    "href": "analysis-setup.html",
+    "title": "8  Analysis Setup",
+    "section": "",
+    "text": "8.1 Setup National Rates\nThe Analysis Set-up feature allows users to configure national rates and upload necessary survey data to facilitate analysis. This guide provides a step-by-step explanation of how to set up national rates and upload survey data using the interface. Please note that file uploads are mandatory to proceed with any analysis beyond the set-up phase.\nThe Set-up National Rates section enables you to input key national-level indicators. Follow these steps to configure them:",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Analysis Setup</span>"
+    ]
+  },
+  {
+    "objectID": "analysis-setup.html#setup-national-rates",
+    "href": "analysis-setup.html#setup-national-rates",
+    "title": "8  Analysis Setup",
+    "section": "",
+    "text": "8.1.1 Fields to Complete:\n\nNeonatal Mortality Rate:\n\nEnter the neonatal mortality rate (e.g., 0.025).\n\nPost Neonatal Mortality Rate:\n\nSpecify the post-neonatal mortality rate (e.g., 0.024).\n\nTwin Rate:\n\nInput the rate of twin births (e.g., 0.015).\n\nPregnancy Loss:\n\nProvide the rate of pregnancy loss (e.g., 0.03).\n\nStill Birth Rate:\n\nEnter the stillbirth rate (e.g., 0.02).\n\nANC1 to Penta1 Mortality Rate:\n\nInclude the ANC1 to Penta1 mortality rate (e.g., 0.025).\n\nANC1 Survey:\n\nInput the ANC1 survey coverage percentage (e.g., 98).\n\nPenta1 Survey:\n\nProvide the Penta1 survey coverage percentage (e.g., 97).\n\n\n\n\n8.1.2 Steps:\n\nEnter the appropriate values for each field.\nEnsure accuracy as these rates are crucial for subsequent analyses.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Analysis Setup</span>"
+    ]
+  },
+  {
+    "objectID": "analysis-setup.html#upload-survey-data",
+    "href": "analysis-setup.html#upload-survey-data",
+    "title": "8  Analysis Setup",
+    "section": "8.2 Upload Survey Data",
+    "text": "8.2 Upload Survey Data\nThe Upload Survey Data section allows you to upload necessary datasets for analysis. It supports files in .dta format. Follow the instructions below:\n\n8.2.1 Upload UN Estimates Data\n\nClick on “Browse or Drop…” under the Upload UN Estimates data section.\nSelect the file containing UN estimates data in .dta format.\nWait for the upload confirmation message.\n\n\n\n8.2.2 Upload WUENIC Estimates\n\nSimilarly, click on “Browse or Drop…” under the Upload WUENIC estimates section.\nChoose the file with WUENIC data in .dta format.\nConfirm the upload completion.\n\n\n\n8.2.3 Configure Survey Folder\n\nClick “Browse or Select…” under the Survey Folder section.\nNavigate to the folder containing your survey files (refer to the Select Directory).\nSelect the folder and verify the folder path.\n\n\n\n8.2.4 Subnational Manual Data Mapping\n\nUse the Map Survey Data button to map subnational survey data.\nUse the Map Mapping Data button to map shapefile data",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Analysis Setup</span>"
+    ]
+  },
+  {
+    "objectID": "analysis-setup.html#manual-mapping-of-survey-data",
+    "href": "analysis-setup.html#manual-mapping-of-survey-data",
+    "title": "8  Analysis Setup",
+    "section": "8.3 Manual Mapping of Survey Data",
+    "text": "8.3 Manual Mapping of Survey Data\nThe Manual Mapping of Survey Data feature enables users to align survey data with subnational regions accurately. This is crucial for ensuring consistency across administrative regions.\n\n8.3.1 Steps to Map Survey Data:\n\nOpen the Manual Mapping Window:\n\nClick on the “Map Survey Data” button in the Subnational Manual Data Mapping section.\n\n\n\n\n\n\n\n\n\n\nFigure 8.2: The Manual mapping of subantional survey data dialog.\n\n\n\n\n\n\nReview the Regions:\n\nThe mapping window will display a list of survey regions (e.g., “DRS Dakar”, “DRS Diourbel”).\nEach region corresponds to a dropdown menu for mapping.\n\nSelect Corresponding Regions:\n\nFor each region in the left column, select the appropriate mapped region from the dropdown menu on the right.\nEnsure all regions are mapped correctly to avoid discrepancies.\n\nSave the Mapping:\n\nAfter completing the mapping for all regions, click the Save Mapping button to confirm your selections.\nEnsure a confirmation message appears (e.g., “Mapping saved successfully”).\n\nVerify the Mapping:\n\nReopen the mapping window if needed to verify that all regions are mapped correctly.\n\n\n\n\n8.3.2 Notes:\n\nManual mapping is optional. If the survey regions already align with the required subnational structure, mapping can be skipped entirely.\nHowever, if mapping is required, it must be completed fully. Partial mapping is not allowed.\nDouble-check each selection to ensure accuracy.\n\n\n\n8.3.3 Mandatory for Analysis\nUploading all required files is essential. Without these files, you will not be able to proceed with:\n\nDenominator Assessment\nNational Analysis\nSubnational Analysis\n\nEnsure all files are uploaded before initiating these steps.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Analysis Setup</span>"
+    ]
+  },
+  {
+    "objectID": "analysis-setup.html#best-practices",
+    "href": "analysis-setup.html#best-practices",
+    "title": "8  Analysis Setup",
+    "section": "8.4 Best Practices",
+    "text": "8.4 Best Practices\n\nEnsure Data Formats: Upload files in .dta format only, as other formats are not supported.\nOrganize Data: Maintain a structured folder with properly named files to avoid confusion during uploads.\nValidate Inputs: Double-check all input values and uploaded files for accuracy.\nMonitor Upload Status: Verify that all uploads show a success message before proceeding.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Analysis Setup</span>"
+    ]
+  },
+  {
+    "objectID": "analysis-setup.html#troubleshooting",
+    "href": "analysis-setup.html#troubleshooting",
+    "title": "8  Analysis Setup",
+    "section": "8.5 Troubleshooting",
+    "text": "8.5 Troubleshooting\n\nFile Upload Issues:\n\nEnsure the file is in .dta format.\nConfirm that the file path is accessible.\n\nIncorrect Rates:\n\nIf you entered incorrect rates, re-enter the values and save them.\n\nSurvey Folder Not Set:\n\nEnsure the folder exists and has proper permissions.\nRetry selecting the folder if the issue persists.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Analysis Setup</span>"
+    ]
+  },
+  {
+    "objectID": "documentation.html",
+    "href": "documentation.html",
+    "title": "9  Documentation",
+    "section": "",
+    "text": "9.1 Steps to Add Notes\nThis feature allows users to document observations, interpretations, or additional information related to specific objects within the analysis. This guide provides a detailed explanation of how to add notes for various objects in the interface.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Documentation</span>"
+    ]
+  },
+  {
+    "objectID": "documentation.html#steps-to-add-notes",
+    "href": "documentation.html#steps-to-add-notes",
+    "title": "9  Documentation",
+    "section": "",
+    "text": "9.1.1 Open the Add Notes Dialog\n\nNavigate to the relevant section of the analysis (e.g., National Coverage).\nClick the “Add Notes” button to open the Document Page dialog.\n\n\n\n9.1.2 2. Select the Object to Document\n\nIn the dropdown menu labelled “Select object to document”, choose the object for which you want to add notes. Examples include: Measles 1, Penta 3, Penta1 to Penta3 Dropout e.t.c.\n\n\n\n9.1.3 3. Enter Notes\n\nIn the text box write your notes.\n\nInclude any observations, interpretations, or relevant comments regarding the selected object.\nNotes can include data trends, potential discrepancies, or contextual explanations.\n\n\n\n\n9.1.4 4. Save the Notes\n\nClick the “Save” button to save your notes.\nEnsure a confirmation message appears indicating that the notes have been successfully saved.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Documentation</span>"
+    ]
+  },
+  {
+    "objectID": "documentation.html#best-practices-for-notes",
+    "href": "documentation.html#best-practices-for-notes",
+    "title": "9  Documentation",
+    "section": "9.2 Best Practices for Notes",
+    "text": "9.2 Best Practices for Notes\n\nBe Specific: Write detailed and clear notes that directly relate to the selected object.\nUse Context: Include explanations for data trends or deviations to assist in later review.\nOrganize Content: Use bullet points or short paragraphs for better readability.\nUpdate as Needed: Edit and revise notes as new observations or data become available.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Documentation</span>"
+    ]
+  },
+  {
+    "objectID": "documentation.html#troubleshooting",
+    "href": "documentation.html#troubleshooting",
+    "title": "9  Documentation",
+    "section": "9.3 Troubleshooting",
+    "text": "9.3 Troubleshooting\n\nObject Not Listed:\n\nEnsure the object you want to document is part of the current analysis.\n\nNotes Not Saved:\n\nVerify that the dialog was not closed before clicking “Save”.\nRetry saving the notes if an error occurs.\n\nNotes Not Visible:\n\nCheck the saved location or return to the dialog to confirm the notes.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Documentation</span>"
+    ]
+  },
+  {
+    "objectID": "report-generation.html",
+    "href": "report-generation.html",
+    "title": "10  Report Generation",
+    "section": "",
+    "text": "10.1 Steps to Generate a Report\nThe Report Generation feature allows users to create and download customized reports based on the analysis results. This guide outlines the steps for selecting a format, generating, and downloading a report using the interface.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Report Generation</span>"
+    ]
+  },
+  {
+    "objectID": "report-generation.html#steps-to-generate-a-report",
+    "href": "report-generation.html#steps-to-generate-a-report",
+    "title": "10  Report Generation",
+    "section": "",
+    "text": "10.1.1 Open the Download Options Dialog\n\nNavigate to the relevant analysis section (e.g., National Coverage).\nClick the “Generate Report” button to open the Download Options dialog.\n\n\n\n\n\n\n\n\n\nFigure 10.1: The download options dialog.\n\n\n\n\n\n\n\n10.1.2 2. Select the Report Format\n\nIn the dialog, choose a report format from the dropdown menu:\n\nOptions include Word or PDF formats.\n\nOnce the desired format is selected, proceed to the next step.\n\n\n\n10.1.3 3. Generate the Report\n\nClick the “Generate Report” button to initiate the report creation process.\nA loading screen will appear.\n\n\n\n\n\n\n\n\n\nFigure 10.2: The generate report loading screen.\n\n\n\n\n\n\nWait for the process to complete. Do not close the dialog during this step.\n\n\n\n10.1.4 4. Download the Report\n\nOnce the report is successfully generated, a confirmation screen will appear.\n\n\n\n\n\n\n\n\n\nFigure 10.3: The download report dialog\n\n\n\n\n\n\nClick the “Download Report” button to save the file to your computer.\nAlternatively, you can click “Dismiss” to close the dialog without downloading.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Report Generation</span>"
+    ]
+  },
+  {
+    "objectID": "report-generation.html#best-practices",
+    "href": "report-generation.html#best-practices",
+    "title": "10  Report Generation",
+    "section": "10.2 Best Practices",
+    "text": "10.2 Best Practices\n\nSelect the Appropriate Format:\n\nChoose a format that suits your intended use (e.g., Word for editing, PDF for sharing).\n\nEnsure Analysis is Complete:\n\nVerify that all necessary inputs and analyses are finalized before generating the report.\n\nSave the Report:\n\nDownload and save the report immediately to avoid having to regenerate it later.\n\nAvoid Interruptions:\n\nDo not close the application or navigate away during the generation process.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Report Generation</span>"
+    ]
+  },
+  {
+    "objectID": "report-generation.html#troubleshooting",
+    "href": "report-generation.html#troubleshooting",
+    "title": "10  Report Generation",
+    "section": "10.3 Troubleshooting",
+    "text": "10.3 Troubleshooting\n\nReport Generation Fails:\n\nEnsure all required inputs for the analysis are complete.\nRetry generating the report.\n\nIncorrect Format Selected:\n\nRegenerate the report by selecting the correct format.\n\nReport Not Downloaded:\n\nIf you missed downloading, repeat the generation process.\n\nLoading Issues:\n\nIf the generation process takes too long, check your internet connection or system resources.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Report Generation</span>"
     ]
   }
 ]

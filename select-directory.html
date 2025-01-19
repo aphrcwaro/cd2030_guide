@@ -8,7 +8,7 @@
 
 <meta name="author" content="David Kariuki">
 
-<title>6&nbsp; DHIS2 Download – cd2030 User Guide</title>
+<title>7&nbsp; Select Directory – cd2030 User Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./select-directory.html" rel="next">
-<link href="./upload-data.html" rel="prev">
+<link href="./analysis-setup.html" rel="next">
+<link href="./dhis2-download.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-input.html">Data Input</a></li><li class="breadcrumb-item"><a href="./dhis2-download.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./select-directory.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Select Directory</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dhis2-download.html" class="sidebar-item-text sidebar-link active">
+  <a href="./dhis2-download.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></span></a>
   </div>
 </li>
@@ -165,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./select-directory.html" class="sidebar-item-text sidebar-link">
+  <a href="./select-directory.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Select Directory</span></span></a>
   </div>
 </li>
@@ -197,20 +197,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#understanding-the-dhis2-download-process" id="toc-understanding-the-dhis2-download-process" class="nav-link active" data-scroll-target="#understanding-the-dhis2-download-process"><span class="header-section-number">6.1</span> Understanding the DHIS2 Download Process</a></li>
-  <li><a href="#connecting-to-dhis2" id="toc-connecting-to-dhis2" class="nav-link" data-scroll-target="#connecting-to-dhis2"><span class="header-section-number">6.2</span> Connecting to DHIS2</a></li>
-  <li><a href="#downloading-data" id="toc-downloading-data" class="nav-link" data-scroll-target="#downloading-data"><span class="header-section-number">6.3</span> Downloading Data</a></li>
-  <li><a href="#security-and-privacy" id="toc-security-and-privacy" class="nav-link" data-scroll-target="#security-and-privacy"><span class="header-section-number">6.4</span> Security and Privacy</a></li>
-  <li><a href="#troubleshooting-dhis2-connections-and-downloads" id="toc-troubleshooting-dhis2-connections-and-downloads" class="nav-link" data-scroll-target="#troubleshooting-dhis2-connections-and-downloads"><span class="header-section-number">6.5</span> Troubleshooting DHIS2 Connections and Downloads</a></li>
+  <li><a href="#steps-to-use-the-select-directory-feature" id="toc-steps-to-use-the-select-directory-feature" class="nav-link active" data-scroll-target="#steps-to-use-the-select-directory-feature"><span class="header-section-number">7.1</span> Steps to Use the Select Directory Feature</a>
+  <ul class="collapse">
+  <li><a href="#open-the-directory-selector" id="toc-open-the-directory-selector" class="nav-link" data-scroll-target="#open-the-directory-selector"><span class="header-section-number">7.1.1</span> Open the Directory Selector</a></li>
+  <li><a href="#select-a-drive-if-needed" id="toc-select-a-drive-if-needed" class="nav-link" data-scroll-target="#select-a-drive-if-needed"><span class="header-section-number">7.1.2</span> Select a Drive (if needed)</a></li>
+  <li><a href="#navigate-through-the-file-system" id="toc-navigate-through-the-file-system" class="nav-link" data-scroll-target="#navigate-through-the-file-system"><span class="header-section-number">7.1.3</span> Navigate Through the File System</a></li>
+  <li><a href="#sort-content-optional" id="toc-sort-content-optional" class="nav-link" data-scroll-target="#sort-content-optional"><span class="header-section-number">7.1.4</span> Sort Content (Optional)</a></li>
+  <li><a href="#select-a-folder" id="toc-select-a-folder" class="nav-link" data-scroll-target="#select-a-folder"><span class="header-section-number">7.1.5</span> Select a Folder</a></li>
+  <li><a href="#verify-your-selection" id="toc-verify-your-selection" class="nav-link" data-scroll-target="#verify-your-selection"><span class="header-section-number">7.1.6</span> Verify Your Selection</a></li>
+  </ul></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices"><span class="header-section-number">7.2</span> Best Practices</a></li>
+  <li><a href="#common-use-cases" id="toc-common-use-cases" class="nav-link" data-scroll-target="#common-use-cases"><span class="header-section-number">7.3</span> Common Use Cases</a>
+  <ul class="collapse">
+  <li><a href="#setting-a-cache-directory" id="toc-setting-a-cache-directory" class="nav-link" data-scroll-target="#setting-a-cache-directory"><span class="header-section-number">7.3.1</span> Setting a Cache Directory</a></li>
+  <li><a href="#uploading-survey-files" id="toc-uploading-survey-files" class="nav-link" data-scroll-target="#uploading-survey-files"><span class="header-section-number">7.3.2</span> Uploading Survey Files</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/dhis2-download.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/select-directory.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-input.html">Data Input</a></li><li class="breadcrumb-item"><a href="./dhis2-download.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-dhis2-download" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></span></h1>
+<h1 class="title"><span id="sec-select-directory" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Select Directory</span></span></h1>
 </div>
 
 
@@ -227,95 +237,98 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This guide explains how to securely connect to DHIS2 using the cd2030 app and download relevant data.</p>
-<section id="understanding-the-dhis2-download-process" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="understanding-the-dhis2-download-process"><span class="header-section-number">6.1</span> Understanding the DHIS2 Download Process</h2>
-<p>The <code>DHIS2 Download</code> module allows you to:</p>
+<p>The <strong>Select Directory</strong> feature allows users to choose a folder on their computer for specific purposes, such as setting a cache directory or uploading survey data. This guide explains how to use the directory selector efficiently.</p>
+<section id="steps-to-use-the-select-directory-feature" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="steps-to-use-the-select-directory-feature"><span class="header-section-number">7.1</span> Steps to Use the Select Directory Feature</h2>
+<section id="open-the-directory-selector" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="open-the-directory-selector"><span class="header-section-number">7.1.1</span> Open the Directory Selector</h3>
 <ul>
-<li>Securely connect to your DHIS2 instance.</li>
-<li>Select the desired country and data period.</li>
-<li>Download data in supported formats for use within the cd2030 app.</li>
+<li>Click the button labelled <strong>“Set Cache Directory”</strong> or any other action that opens the directory selector.</li>
+<li>A window will appear, allowing you to browse your computer’s file system.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ds-select-directory" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The select directory dialog. ">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ds-select-directory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/set-cache.jpg" class="img-fluid figure-img" alt="The select directory dialog. ">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ds-select-directory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: The select directory dialog.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="select-a-drive-if-needed" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="select-a-drive-if-needed"><span class="header-section-number">7.1.2</span> Select a Drive (if needed)</h3>
+<ul>
+<li>Use the <strong>top-right drop-down menu</strong> labelled with the current drive (e.g., <code>C:</code>) to select a different drive.</li>
+<li>Click the drop-down arrow and choose the drive where the desired folder is located.</li>
 </ul>
 </section>
-<section id="connecting-to-dhis2" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="connecting-to-dhis2"><span class="header-section-number">6.2</span> Connecting to DHIS2</h2>
-<p>Follow these steps to establish a connection:</p>
+<section id="navigate-through-the-file-system" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="navigate-through-the-file-system"><span class="header-section-number">7.1.3</span> Navigate Through the File System</h3>
+<ul>
+<li>Use the <strong>left-hand panel</strong> to browse available folders.</li>
+<li>Expand a folder by clicking the small triangle next to its name.</li>
+<li>Scroll as needed to view more directories.</li>
+</ul>
+</section>
+<section id="sort-content-optional" class="level3" data-number="7.1.4">
+<h3 data-number="7.1.4" class="anchored" data-anchor-id="sort-content-optional"><span class="header-section-number">7.1.4</span> Sort Content (Optional)</h3>
+<ul>
+<li>Use the <strong>“Sort Content”</strong> button to organize the folders alphabetically or by other criteria, if available.</li>
+</ul>
+</section>
+<section id="select-a-folder" class="level3" data-number="7.1.5">
+<h3 data-number="7.1.5" class="anchored" data-anchor-id="select-a-folder"><span class="header-section-number">7.1.5</span> Select a Folder</h3>
+<ul>
+<li>Click on the desired folder to highlight it.</li>
+<li>Click the <strong>“Select”</strong> button at the bottom-right corner of the window to confirm your choice.</li>
+</ul>
+</section>
+<section id="verify-your-selection" class="level3" data-number="7.1.6">
+<h3 data-number="7.1.6" class="anchored" data-anchor-id="verify-your-selection"><span class="header-section-number">7.1.6</span> Verify Your Selection</h3>
+<ul>
+<li>Once the folder is selected, the application will confirm the operation with a message (e.g., “Cache directory set successfully”).</li>
+</ul>
+</section>
+</section>
+<section id="best-practices" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="best-practices"><span class="header-section-number">7.2</span> Best Practices</h2>
 <ol type="1">
-<li><strong>Enter Your Credentials:</strong> Provide your DHIS2 <strong>username</strong> and <strong>password</strong> in the respective fields.</li>
-<li><strong>Select a Country:</strong> Choose the relevant country from the drop-down menu. This selection is crucial as it determines the DHIS2 instance the app will connect to.</li>
-<li><strong>Set the Period:</strong> Define the date range for the data you wish to download using the <code>Period</code> selection tools. This allows you to specify the start and end dates for your data.</li>
-<li><strong>Click Login:</strong> Press the <code>Login</code> button to initiate the connection process. The app will attempt to authenticate your credentials with the specified DHIS2 server and download the relevant data.</li>
+<li><strong>Ensure Folder Permissions</strong>:
+<ul>
+<li>Make sure the folder has the appropriate read/write permissions for the application to access or save files.</li>
+</ul></li>
+<li><strong>Use a Dedicated Folder</strong>:
+<ul>
+<li>Create and use a specific folder (e.g., “Cache” or “App Data”) to keep files organized and prevent mixing unrelated data.</li>
+</ul></li>
+<li><strong>Avoid System Folders</strong>:
+<ul>
+<li>Refrain from selecting critical system directories (e.g., <code>C:/Windows</code>) to avoid accidental changes to sensitive files.</li>
+</ul></li>
 </ol>
 </section>
-<section id="downloading-data" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="downloading-data"><span class="header-section-number">6.3</span> Downloading Data</h2>
-<p>Once a successful data download choose between the available download formats: - <strong>Download Master File:</strong> Downloads the data as a <code>.dta</code> (Stata) file. - <strong>Download Excel File:</strong> Downloads the data as a <code>.xlsx</code> (Excel) file.</p>
-</section>
-<section id="security-and-privacy" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="security-and-privacy"><span class="header-section-number">6.4</span> Security and Privacy</h2>
-<p>The cd2030 app prioritizes the security and privacy of your DHIS2 credentials:</p>
+<section id="common-use-cases" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="common-use-cases"><span class="header-section-number">7.3</span> Common Use Cases</h2>
+<section id="setting-a-cache-directory" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="setting-a-cache-directory"><span class="header-section-number">7.3.1</span> Setting a Cache Directory</h3>
 <ul>
-<li><strong>Temporary Credentials:</strong> Your DHIS2 username and password are used only temporarily during the current session.</li>
-<li><strong>No Storage of Credentials:</strong> The app does <em>not</em> store your credentials persistently. Once the session ends or you close the app, all credential information is discarded.</li>
-<li><strong>Secure Connection:</strong> The app uses secure communication protocols (HTTPS) to connect to DHIS2 servers, protecting your data during transmission.</li>
-<li><strong>Open-Source Code:</strong> The app’s open-source nature allows for independent review of its code, ensuring transparency in how credentials and data are handled.</li>
+<li>Store temporary files generated by the application to enhance performance by reusing cached data.</li>
 </ul>
 </section>
-<section id="troubleshooting-dhis2-connections-and-downloads" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="troubleshooting-dhis2-connections-and-downloads"><span class="header-section-number">6.5</span> Troubleshooting DHIS2 Connections and Downloads</h2>
-<p>The following table lists common errors and their solutions:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 46%">
-<col style="width: 32%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Error Message</th>
-<th style="text-align: left;">Cause</th>
-<th style="text-align: left;">Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">“Error: Country must be selected”</td>
-<td style="text-align: left;">No country was selected from the drop-down menu.</td>
-<td style="text-align: left;">Select the appropriate country from the drop-down list.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">“Error: Username must be provided”</td>
-<td style="text-align: left;">The username field is empty.</td>
-<td style="text-align: left;">Enter your DHIS2 username in the designated field.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">“Error: Password must be provided”</td>
-<td style="text-align: left;">The password field is empty.</td>
-<td style="text-align: left;">Enter your DHIS2 password in the designated field.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">“Download Error: Failed to retrieve user profile.”</td>
-<td style="text-align: left;">There is an issue with the DHIS2 server, a network connectivity problem, incorrect credentials, or the selected country’s configuration within the app.</td>
-<td style="text-align: left;"><ul>
-<li><p>Verify your internet connection.</p></li>
-<li><p>Double-check your DHIS2 username and password for typos.</p></li>
-<li><p>Ensure the DHIS2 server is operational by accessing it through a web browser.</p></li>
-<li><p>Confirm that you have access to the selected country’s DHIS2 instance.</p></li>
-<li><p>If the problem persists, contact your DHIS2 administrator or the app’s support team.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">“Download Error: Could not retrieve data for the specified period.”</td>
-<td style="text-align: left;">No data exists on the DHIS2 server for the selected country and period, or the user lacks the necessary permissions.</td>
-<td style="text-align: left;"><ul>
-<li>Verify that data exists in DHIS2 for the chosen country and time period by checking DHIS2 directly.</li>
-<li>Ensure your DHIS2 user account has the required permissions to access the data.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+<section id="uploading-survey-files" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="uploading-survey-files"><span class="header-section-number">7.3.2</span> Uploading Survey Files</h3>
+<ul>
+<li>Choose a folder containing country-specific survey files (e.g., <code>.dta</code>) for importing data into the application.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -738,13 +751,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./upload-data.html" class="pagination-link" aria-label="Upload Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Upload Data</span></span>
+      <a href="./dhis2-download.html" class="pagination-link" aria-label="DHIS2 Download">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">DHIS2 Download</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./select-directory.html" class="pagination-link" aria-label="Select Directory">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Select Directory</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./analysis-setup.html" class="pagination-link" aria-label="Analysis Setup">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Analysis Setup</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -756,7 +769,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/dhis2-download.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/damurka/cd2030/edit/main/select-directory.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/damurka/cd2030/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
