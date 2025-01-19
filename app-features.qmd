@@ -112,7 +112,7 @@ knitr::include_graphics("images/sidebar-load.jpg", dpi = 270)
 knitr::include_graphics("images/sidebar-quality.jpg", dpi = 270)
 ```
 
-4.  **Analysis Setup**: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the subnational survey and mapping data to the uploaded data.
+4.  **Analysis Set-up**: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the sub-national survey and mapping data to the uploaded data.
 
 ```{r}
 #| label: fig-ds-sidebar-setup
@@ -126,7 +126,7 @@ knitr::include_graphics("images/sidebar-quality.jpg", dpi = 270)
 knitr::include_graphics("images/sidebar-setup.jpg", dpi = 270)
 ```
 
-5.  **National and Subnational Analysis**: Provides tools for analysing coverage and equity at both the national and subnational levels. This pages are only active after completing the "Analysis Setup" section.
+5.  **National and Sub-national Analysis**: Provides tools for analysing coverage and equity at both the national and sub-national levels. This pages are only active after completing the "Analysis Set-up" section.
 
 ```{r}
 #| label: fig-ds-sidebar-analysis
