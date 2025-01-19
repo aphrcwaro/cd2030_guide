@@ -17,39 +17,38 @@ knitr::include_graphics("images/add-notes.jpg", dpi = 270)
 ## Steps to Add Notes
 
 ### Open the Add Notes Dialog
-- Navigate to the relevant section of the analysis (e.g., National Coverage).
-- Click the **"Add Notes"** button to open the **Document Page** dialog.
 
-### **2. Select the Object to Document**
-- In the dropdown menu labelled **"Select object to document"**, choose the object for which you want to add notes. Examples include: Measles 1, Penta 3, Penta1 to Penta3 Dropout e.t.c.
+-   Navigate to the relevant section of the analysis (e.g., National Coverage).
+-   Click the **"Add Notes"** button to open the **Document Page** dialog.
 
-### **3. Enter Notes**
-- In the text box write your notes.
-  - Include any observations, interpretations, or relevant comments regarding the selected object.
-  - Notes can include data trends, potential discrepancies, or contextual explanations.
+### Select the Object to Document
 
-### **4. Save the Notes**
-- Click the **"Save"** button to save your notes.
-- Ensure a confirmation message appears indicating that the notes have been successfully saved.
+-   In the dropdown menu labelled **"Select object to document"**, choose the object for which you want to add notes. Examples include: Measles 1, Penta 3, Penta1 to Penta3 Dropout e.t.c.
+
+### Enter Notes
+
+-   In the text box write your notes.
+    -   Include any observations, interpretations, or relevant comments regarding the selected object.
+    -   Notes can include data trends, potential discrepancies, or contextual explanations.
+
+### Save the Notes
+
+-   Click the **"Save"** button to save your notes.
+-   Ensure a confirmation message appears indicating that the notes have been successfully saved.
 
 ## Best Practices for Notes
 
-1. **Be Specific**: Write detailed and clear notes that directly relate to the selected object.
-
-2. **Use Context**: Include explanations for data trends or deviations to assist in later review.
-
-3. **Organize Content**: Use bullet points or short paragraphs for better readability.
-
-4. **Update as Needed**: Edit and revise notes as new observations or data become available.
+1.  **Be Specific**: Write detailed and clear notes that directly relate to the selected object.
+2.  **Use Context**: Include explanations for data trends or deviations to assist in later review.
+3.  **Organize Content**: Use bullet points or short paragraphs for better readability.
+4.  **Update as Needed**: Edit and revise notes as new observations or data become available.
 
 ## Troubleshooting
 
-1. **Object Not Listed**:
-   - Ensure the object you want to document is part of the current analysis.
-
-2. **Notes Not Saved**:
-   - Verify that the dialog was not closed before clicking **"Save"**.
-   - Retry saving the notes if an error occurs.
-
-3. **Notes Not Visible**:
-   - Check the saved location or return to the dialog to confirm the notes.
+1.  **Object Not Listed**:
+    -   Ensure the object you want to document is part of the current analysis.
+2.  **Notes Not Saved**:
+    -   Verify that the dialog was not closed before clicking **"Save"**.
+    -   Retry saving the notes if an error occurs.
+3.  **Notes Not Visible**:
+    -   Check the saved location or return to the dialog to confirm the notes.

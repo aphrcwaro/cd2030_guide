@@ -17,6 +17,7 @@ search_index.json
 # Markdown and HTML outputs (except specific files)
 *.md
 !CODE_OF_CONDUCT.md
+!README.md
 *.html
 
 # Cache and dependency folders
