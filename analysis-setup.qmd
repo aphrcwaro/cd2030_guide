@@ -60,8 +60,8 @@ The **Upload Survey Data** section allows you to upload necessary datasets for a
 
 ### Configure Survey Folder
 
--   Click **"Browse or Select..."** under the **Survey Folder** section.
--   Navigate to the folder containing your survey files (refer to the [Select Directory](#sec-select-directory)).
+-   Click **"Browse or Drop..."** under the **Survey Folder** section.
+-   Navigate to the folder containing your survey files.
 -   Select the folder and verify the folder path.
 
 ### Subnational Manual Data Mapping
