@@ -84,7 +84,7 @@
     "href": "getting-started.html#installing-the-app",
     "title": "2  Getting Started",
     "section": "2.2 Installing the App",
-    "text": "2.2 Installing the App\nThe cd2030 Shiny App is hosted on GitHub. To install it:\n\nOpen RStudio.\nInstall the pak package (if not already installed):\n\n\nif (!require('pak')) install.packages(\"pak\")\n\nThis package manager simplifies the app installation process.\n\nInstall the cd2030 app:\n\n\npak::pak(\"damurka/cd2030\")\n\nThis will download and install the app on your system, along with all required packages.",
+    "text": "2.2 Installing the App\nThe cd2030 Shiny App is hosted on GitHub. To install it:\n\nOpen RStudio.\nInstall the devtools package (if not already installed):\n\n\nif (!require('devtools')) install.packages(\"devtools\")\n\nThis package manager simplifies the app installation process.\n\nInstall the cd2030 app:\n\n\ndevtools::install_github(\"aphrcwaro/cd2030\")\n\nThis will download and install the app on your system, along with all required packages.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
     ]
