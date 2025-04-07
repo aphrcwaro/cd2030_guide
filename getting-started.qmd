@@ -25,12 +25,12 @@ Before using the app, ensure you have the following:
 The **cd2030** Shiny App is hosted on GitHub. To install it:
 
 1.  Open RStudio.
-2.  Install the `pak` package (if not already installed):
+2.  Install the `devtools` package (if not already installed):
 
 ```{r}
 #| eval: false
 
-if (!require('pak')) install.packages("pak")
+if (!require('devtools')) install.packages("devtools")
 ```
 
 This package manager simplifies the app installation process.
@@ -40,7 +40,7 @@ This package manager simplifies the app installation process.
 ```{r}
 #| eval: false
 
-pak::pak("damurka/cd2030")
+devtools::install_github("aphrcwaro/cd2030")
 ```
 
 This will download and install the app on your system, along with all required packages.
